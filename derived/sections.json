@@ -1,0 +1,2732 @@
+{
+  "generator": "scripts/split_sections.py v1",
+  "sections": [
+    {
+      "rfc": "6749",
+      "section": "1",
+      "stable_id": "rfc6749-s1",
+      "title": "Introduction",
+      "char_start": 10764,
+      "char_end": 14663,
+      "sha256": "bb34a0928b181b48d2cc6174e1fc49780ba8b7af82582ea450868aad4b8c0bf1"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.1",
+      "stable_id": "rfc6749-s1.1",
+      "title": "Roles",
+      "char_start": 14663,
+      "char_end": 16006,
+      "sha256": "1cb94fcbb687487c62fb79c0d1a4925236829aabf5e6f200b13d1d788d7d4dba"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.2",
+      "stable_id": "rfc6749-s1.2",
+      "title": "Protocol Flow",
+      "char_start": 16006,
+      "char_end": 18808,
+      "sha256": "2907db91a804760befca82085d2f583f7cba48cab0335f51f072e0207afdd6ed"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.3",
+      "stable_id": "rfc6749-s1.3",
+      "title": "Authorization Grant",
+      "char_start": 18808,
+      "char_end": 19233,
+      "sha256": "354b43d0ed028e27fa2e3ece152558b84d8d19fb4b29207ded693b3a6584567a"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.3.1",
+      "stable_id": "rfc6749-s1.3.1",
+      "title": "Authorization Code",
+      "char_start": 19233,
+      "char_end": 20337,
+      "sha256": "bdf7ce1e6b237c365639cd1750fc132ec4305a0940d30ec2ff873fe2868c3bb2"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.3.2",
+      "stable_id": "rfc6749-s1.3.2",
+      "title": "Implicit",
+      "char_start": 20337,
+      "char_end": 21851,
+      "sha256": "aaf1b0f9edce9761ff6ad3c83f9ec68c488ce8b5b3107915d78e9e21463c7312"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.3.3",
+      "stable_id": "rfc6749-s1.3.3",
+      "title": "Resource Owner Password Credentials",
+      "char_start": 21851,
+      "char_end": 22766,
+      "sha256": "a9cf01a70558edbc04ad58af91bd7fed9dc39c398da899cd9559e8d2ab6ca2f5"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.3.4",
+      "stable_id": "rfc6749-s1.3.4",
+      "title": "Client Credentials",
+      "char_start": 22766,
+      "char_end": 23528,
+      "sha256": "9249f6080104f64ba0e06b8065bdf407c62d23faa3bd5a0f0a762dae2b284a49"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.4",
+      "stable_id": "rfc6749-s1.4",
+      "title": "Access Token",
+      "char_start": 23528,
+      "char_end": 25075,
+      "sha256": "5bc8d4400457370b5958f823bf8e9a7c8066ab25494e49be0feacdd1d7ca5254"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.5",
+      "stable_id": "rfc6749-s1.5",
+      "title": "Refresh Token",
+      "char_start": 25075,
+      "char_end": 29421,
+      "sha256": "7a853bbcb05e4508ca5e25c4c493a89471551b3eb05fd0661e85952ba7b4ded7"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.6",
+      "stable_id": "rfc6749-s1.6",
+      "title": "TLS Version",
+      "char_start": 29421,
+      "char_end": 30088,
+      "sha256": "032ab6b62ac745ea92962d8655c76464ab497900f3ac8be310d2a60b16efc573"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.7",
+      "stable_id": "rfc6749-s1.7",
+      "title": "HTTP Redirections",
+      "char_start": 30088,
+      "char_end": 30527,
+      "sha256": "34ac4359d485793447113f5213d2c33969b54ab66f931f75d72572e6b82d1b78"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.8",
+      "stable_id": "rfc6749-s1.8",
+      "title": "Interoperability",
+      "char_start": 30527,
+      "char_end": 31545,
+      "sha256": "40b689623d282d8093fa4d7e6d3aa71202636a0ee80b0b8cb96e43a6cd124ca1"
+    },
+    {
+      "rfc": "6749",
+      "section": "1.9",
+      "stable_id": "rfc6749-s1.9",
+      "title": "Notational Conventions",
+      "char_start": 31545,
+      "char_end": 32420,
+      "sha256": "1915a5f042d41b72f033eb8c018d52f5f9f313901a0875c2f1fc8595d15de542"
+    },
+    {
+      "rfc": "6749",
+      "section": "2",
+      "stable_id": "rfc6749-s2",
+      "title": "Client Registration",
+      "char_start": 32420,
+      "char_end": 33779,
+      "sha256": "880207e4f119474cbbf68a11f31fc1403c9e24cdd2877e1c967f9e66877a3d4e"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.1",
+      "stable_id": "rfc6749-s2.1",
+      "title": "Client Types",
+      "char_start": 33779,
+      "char_end": 37195,
+      "sha256": "07b2e6a9dd48c004b30dd7a028dddd6b25d090038fc1f9a4133001ed8f2d8e56"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.2",
+      "stable_id": "rfc6749-s2.2",
+      "title": "Client Identifier",
+      "char_start": 37195,
+      "char_end": 37983,
+      "sha256": "28db8412271d6ca584286c6c57ec749e3f46e5795b673137e4c9cf8ba252fe93"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.3",
+      "stable_id": "rfc6749-s2.3",
+      "title": "Client Authentication",
+      "char_start": 37983,
+      "char_end": 38819,
+      "sha256": "30f445efaf619a3a39fdd0eda5b55bd9ef7ecdd9b8b9702b6cf3ce3cb32d22b2"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.3.1",
+      "stable_id": "rfc6749-s2.3.1",
+      "title": "Client Password",
+      "char_start": 38819,
+      "char_end": 41210,
+      "sha256": "10800ae909e46cb3039438e6838194982b3ab4b10ca0965524ac15780362b365"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.3.2",
+      "stable_id": "rfc6749-s2.3.2",
+      "title": "Other Authentication Methods",
+      "char_start": 41210,
+      "char_end": 41545,
+      "sha256": "e8c6baec41ac3d8d162e42c7ba9154e4eee973e7d1c6279d91d7aa38a5100e12"
+    },
+    {
+      "rfc": "6749",
+      "section": "2.4",
+      "stable_id": "rfc6749-s2.4",
+      "title": "Unregistered Clients",
+      "char_start": 41545,
+      "char_end": 41976,
+      "sha256": "9a2c7b30e16aefd2614f730468581b7545257842e83dcb215d8d2b17de5116d2"
+    },
+    {
+      "rfc": "6749",
+      "section": "3",
+      "stable_id": "rfc6749-s3",
+      "title": "Protocol Endpoints",
+      "char_start": 41976,
+      "char_end": 42720,
+      "sha256": "76460bf79699428c1383fe6f0675a81edff1bfd8f5578532fb8f674447206365"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1",
+      "stable_id": "rfc6749-s3.1",
+      "title": "Authorization Endpoint",
+      "char_start": 42720,
+      "char_end": 44475,
+      "sha256": "7d0832b520af08b267b293450ceb54ddfc0f71d2b65a50b88a384145827d7177"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.1",
+      "stable_id": "rfc6749-s3.1.1",
+      "title": "Response Type",
+      "char_start": 44475,
+      "char_end": 45525,
+      "sha256": "ffbdb9f6b18fd40ad79c54415b074e6581db2069b1ad31e86246862a3ed04682"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2",
+      "stable_id": "rfc6749-s3.1.2",
+      "title": "Redirection Endpoint",
+      "char_start": 45525,
+      "char_end": 46463,
+      "sha256": "8feeaa28fafcd71707739635d5d1830952624474855c823b1fd05490c5e234f9"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2.1",
+      "stable_id": "rfc6749-s3.1.2.1",
+      "title": "Endpoint Request Confidentiality",
+      "char_start": 46463,
+      "char_end": 47513,
+      "sha256": "528601625fb83e834e526606dbb7dd5a383b63c8363b1d8efa82a72e6a0fdb52"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2.2",
+      "stable_id": "rfc6749-s3.1.2.2",
+      "title": "Registration Requirements",
+      "char_start": 47513,
+      "char_end": 48811,
+      "sha256": "8fd596275e715794fa8918dc1ed0b0030f48df140dce3bb1675af78664973cec"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2.3",
+      "stable_id": "rfc6749-s3.1.2.3",
+      "title": "Dynamic Configuration",
+      "char_start": 48811,
+      "char_end": 49617,
+      "sha256": "091696d8e16c67bf7a949423e5e18228bb0262e88c109798163ef79ade93c9f9"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2.4",
+      "stable_id": "rfc6749-s3.1.2.4",
+      "title": "Invalid Endpoint",
+      "char_start": 49617,
+      "char_end": 49916,
+      "sha256": "e4d5c047a80a1e2fdeecd8852a0c225d0f877a705e832dfe29b6d9c2d2ff3d15"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.1.2.5",
+      "stable_id": "rfc6749-s3.1.2.5",
+      "title": "Endpoint Content",
+      "char_start": 49916,
+      "char_end": 50805,
+      "sha256": "d41be4dc235792cf9f3db755c9e3b95f669bbb2b0ad7e100486fbbd2ed1e25f8"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.2",
+      "stable_id": "rfc6749-s3.2",
+      "title": "Token Endpoint",
+      "char_start": 50805,
+      "char_end": 52321,
+      "sha256": "82535e44eb664a5621277a774f81e498f0a2ff3c2218ab8e7c46d5798e362f6b"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.2.1",
+      "stable_id": "rfc6749-s3.2.1",
+      "title": "Client Authentication",
+      "char_start": 52321,
+      "char_end": 54138,
+      "sha256": "75ffdc9f9a0b037ba60d0d19aa582e7f24a3eeec3245f6cc0c778e0088cca398"
+    },
+    {
+      "rfc": "6749",
+      "section": "3.3",
+      "stable_id": "rfc6749-s3.3",
+      "title": "Access Token Scope",
+      "char_start": 54138,
+      "char_end": 55592,
+      "sha256": "537279161c038b79c392291e876b434340630e5bca4526cbb6e2412be1cea4d1"
+    },
+    {
+      "rfc": "6749",
+      "section": "4",
+      "stable_id": "rfc6749-s4",
+      "title": "Obtaining Authorization",
+      "char_start": 55592,
+      "char_end": 56204,
+      "sha256": "c00dc88ce2e77b9472d3ae45245f28ac4c56d5c9ad4e20a9a49c4e12f8354526"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1",
+      "stable_id": "rfc6749-s4.1",
+      "title": "Authorization Code Grant",
+      "char_start": 56204,
+      "char_end": 59858,
+      "sha256": "e40a25e301053d5a7f04c7648c8bdbaeecfa401bdcacdeeec68410de9ab06649"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1.1",
+      "stable_id": "rfc6749-s4.1.1",
+      "title": "Authorization Request",
+      "char_start": 59858,
+      "char_end": 61962,
+      "sha256": "5eeacf48ceb6cfc0167a070474e9d82e1a0320316218bfbf87985958a77dd9b2"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1.2",
+      "stable_id": "rfc6749-s4.1.2",
+      "title": "Authorization Response",
+      "char_start": 61962,
+      "char_end": 63809,
+      "sha256": "5a0b1c5cbe1446ddc7bd16f26db67b8065ab48ecfba29b4d55e23d78f58922be"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1.2.1",
+      "stable_id": "rfc6749-s4.1.2.1",
+      "title": "Error Response",
+      "char_start": 63809,
+      "char_end": 67557,
+      "sha256": "1d7dc34c8155c6759bda96227a9c3994023d5352b1ca2c86ade995e8aec6a7af"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1.3",
+      "stable_id": "rfc6749-s4.1.3",
+      "title": "Access Token Request",
+      "char_start": 67557,
+      "char_end": 69919,
+      "sha256": "b69800788da8ecaa5764f07e7dbe4fac6c457eb4f0995430592724c850703c29"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.1.4",
+      "stable_id": "rfc6749-s4.1.4",
+      "title": "Access Token Response",
+      "char_start": 69919,
+      "char_end": 70797,
+      "sha256": "3a4e8f6f6d956bc4bcf74077004881ae120851b00d72474ab4f8c3c27915e9ba"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.2",
+      "stable_id": "rfc6749-s4.2",
+      "title": "Implicit Grant",
+      "char_start": 70797,
+      "char_end": 75448,
+      "sha256": "e4d2255c99ffd8001d788410356a6419565d6b212cffe672d74ddbfaad418f21"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.2.1",
+      "stable_id": "rfc6749-s4.2.1",
+      "title": "Authorization Request",
+      "char_start": 75448,
+      "char_end": 77909,
+      "sha256": "41f623302fe711339257f9bfff6522a246ec390374ae76b97941a83724f80a8d"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.2.2",
+      "stable_id": "rfc6749-s4.2.2",
+      "title": "Access Token Response",
+      "char_start": 77909,
+      "char_end": 80367,
+      "sha256": "889aa95a8e3649766704ecab4afeb6821fda1b11ceb95a2135243c6b183bf9aa"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.2.2.1",
+      "stable_id": "rfc6749-s4.2.2.1",
+      "title": "Error Response",
+      "char_start": 80367,
+      "char_end": 83956,
+      "sha256": "525ad79e6bbfb2cc266432ea6eed1ea77cbe53ca215e9ac1b51218643b02a4af"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.3",
+      "stable_id": "rfc6749-s4.3",
+      "title": "Resource Owner Password Credentials Grant",
+      "char_start": 83956,
+      "char_end": 86348,
+      "sha256": "19c6d895431210b36c85a1ef09f0fe20d2fdbaf0b757088621f42702591e5f66"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.3.1",
+      "stable_id": "rfc6749-s4.3.1",
+      "title": "Authorization Request and Response",
+      "char_start": 86348,
+      "char_end": 86601,
+      "sha256": "5b3aa0453477669a85bf91a1b5f5a1c20b86253188365690854f36620622c308"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.3.2",
+      "stable_id": "rfc6749-s4.3.2",
+      "title": "Access Token Request",
+      "char_start": 86601,
+      "char_end": 88529,
+      "sha256": "95b3e5e75367df95e7da743a5abf1350758ef9dd2e812b1aeedf39eff324fb34"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.3.3",
+      "stable_id": "rfc6749-s4.3.3",
+      "title": "Access Token Response",
+      "char_start": 88529,
+      "char_end": 89244,
+      "sha256": "d0b19f00a1f14c300f7189a3699c9944b14ec131a0a20974ba2f16b818e502f3"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.4",
+      "stable_id": "rfc6749-s4.4",
+      "title": "Client Credentials Grant",
+      "char_start": 89244,
+      "char_end": 90730,
+      "sha256": "1fe1427df8d3aef0040acaad82956e79e513102f3f19d43515279c6d6e206f7e"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.4.1",
+      "stable_id": "rfc6749-s4.4.1",
+      "title": "Authorization Request and Response",
+      "char_start": 90730,
+      "char_end": 90896,
+      "sha256": "4e4c134c7ec457df92a0ae9468ae524d1503834885c87013bd13f5bd499b46c0"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.4.2",
+      "stable_id": "rfc6749-s4.4.2",
+      "title": "Access Token Request",
+      "char_start": 90896,
+      "char_end": 92002,
+      "sha256": "3ebd9e2683628bf5cf8be262f99bcee4fb97b60fa5c3fc94f69ea6fe9b12fcf7"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.4.3",
+      "stable_id": "rfc6749-s4.4.3",
+      "title": "Access Token Response",
+      "char_start": 92002,
+      "char_end": 92682,
+      "sha256": "9df17df9a7313b0d159671b2b1a20c4c5d80b453e17247d1e8b15c65c93ca5ec"
+    },
+    {
+      "rfc": "6749",
+      "section": "4.5",
+      "stable_id": "rfc6749-s4.5",
+      "title": "Extension Grants",
+      "char_start": 92682,
+      "char_end": 94013,
+      "sha256": "45abbc02f024d73f9dbc4672931572c0d440914490c39d78bd2bd2c1354e68c0"
+    },
+    {
+      "rfc": "6749",
+      "section": "5",
+      "stable_id": "rfc6749-s5",
+      "title": "Issuing an Access Token",
+      "char_start": 94013,
+      "char_end": 94355,
+      "sha256": "931c9cf56d308cb2619a135f92200775d0cf99737b0164890cc0a7d5806636e2"
+    },
+    {
+      "rfc": "6749",
+      "section": "5.1",
+      "stable_id": "rfc6749-s5.1",
+      "title": "Successful Response",
+      "char_start": 94355,
+      "char_end": 97287,
+      "sha256": "4ea2a3b972c3a6b0831f8388608790fb2e6dc81af72360c3ae7470a0b8640b2f"
+    },
+    {
+      "rfc": "6749",
+      "section": "5.2",
+      "stable_id": "rfc6749-s5.2",
+      "title": "Error Response",
+      "char_start": 97287,
+      "char_end": 101236,
+      "sha256": "f4d9281466ea98bcc511479ad1a81fe5e946a63585cf33dc6227b24ac74bdfb3"
+    },
+    {
+      "rfc": "6749",
+      "section": "6",
+      "stable_id": "rfc6749-s6",
+      "title": "Refreshing an Access Token",
+      "char_start": 101236,
+      "char_end": 104072,
+      "sha256": "63b8b447b72ba8d5e9cf29dd592ffb57c54fae5b1cf8c15f701510ddc8103aa0"
+    },
+    {
+      "rfc": "6749",
+      "section": "7",
+      "stable_id": "rfc6749-s7",
+      "title": "Accessing Protected Resources",
+      "char_start": 104072,
+      "char_end": 105163,
+      "sha256": "e471ce94dcbbd379147fbf877042beb5139c7a5b0606af564c50a8fbd488be2b"
+    },
+    {
+      "rfc": "6749",
+      "section": "7.1",
+      "stable_id": "rfc6749-s7.1",
+      "title": "Access Token Types",
+      "char_start": 105163,
+      "char_end": 106597,
+      "sha256": "c90f6137d12b76738bcc586e9b2e138517f07f6cc9cf52539c93ec762b9c71c0"
+    },
+    {
+      "rfc": "6749",
+      "section": "7.2",
+      "stable_id": "rfc6749-s7.2",
+      "title": "Error Response",
+      "char_start": 106597,
+      "char_end": 107973,
+      "sha256": "3c338abd3e8d9771b8b28d8dbc4128365290aa30ce14103d1ac4d80ff33e81cb"
+    },
+    {
+      "rfc": "6749",
+      "section": "8",
+      "stable_id": "rfc6749-s8",
+      "title": "Extensibility",
+      "char_start": 107973,
+      "char_end": 107992,
+      "sha256": "32ff118f88e7ec051831a7b9822c545a8e00ae3597cc219713a5765bc3bb2719"
+    },
+    {
+      "rfc": "6749",
+      "section": "8.1",
+      "stable_id": "rfc6749-s8.1",
+      "title": "Defining Access Token Types",
+      "char_start": 107992,
+      "char_end": 108853,
+      "sha256": "f29825679901fec6edfb96862157742d2dde3b6f0a9fbb020801475ff6b212ed"
+    },
+    {
+      "rfc": "6749",
+      "section": "8.2",
+      "stable_id": "rfc6749-s8.2",
+      "title": "Defining New Endpoint Parameters",
+      "char_start": 108853,
+      "char_end": 109858,
+      "sha256": "c7e4d50fa7ea8485335d01b9dd6bd5417d8faa7f52575c49538d980d9280174b"
+    },
+    {
+      "rfc": "6749",
+      "section": "8.3",
+      "stable_id": "rfc6749-s8.3",
+      "title": "Defining New Authorization Grant Types",
+      "char_start": 109858,
+      "char_end": 110209,
+      "sha256": "7a22bae5a2b03f2baf4a93762ea6907ff5ee88aa27f5c05ae6f6499d74898610"
+    },
+    {
+      "rfc": "6749",
+      "section": "8.4",
+      "stable_id": "rfc6749-s8.4",
+      "title": "Defining New Authorization Endpoint Response Types",
+      "char_start": 110209,
+      "char_end": 111263,
+      "sha256": "c9cce2d8a260b0df3c84b2b90c859ad86742b30201350bcedc335c8280aaac45"
+    },
+    {
+      "rfc": "6749",
+      "section": "8.5",
+      "stable_id": "rfc6749-s8.5",
+      "title": "Defining Additional Error Codes",
+      "char_start": 111263,
+      "char_end": 112514,
+      "sha256": "c2f62d11ddca7edd4d22a32fbccf07714631e0b6bf52c346242434e43f23fa5f"
+    },
+    {
+      "rfc": "6749",
+      "section": "9",
+      "stable_id": "rfc6749-s9",
+      "title": "Native Applications",
+      "char_start": 112514,
+      "char_end": 115566,
+      "sha256": "dd4b3445b84af91c05daa9490d9d82f35f1dd6ddaa83c5a05f037fa24e8af308"
+    },
+    {
+      "rfc": "6749",
+      "section": "10",
+      "stable_id": "rfc6749-s10",
+      "title": "Security Considerations",
+      "char_start": 115566,
+      "char_end": 116056,
+      "sha256": "f527568c9719148e0cd262a16aa4d1e2298bd8f7e405955543b83d60c0c74ac2"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.1",
+      "stable_id": "rfc6749-s10.1",
+      "title": "Client Authentication",
+      "char_start": 116056,
+      "char_end": 117730,
+      "sha256": "ac65d5ef3c0a69687841fa9a47efc16f94cd0bbee68c4cd1e126f5369570f73e"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.2",
+      "stable_id": "rfc6749-s10.2",
+      "title": "Client Impersonation",
+      "char_start": 117730,
+      "char_end": 119286,
+      "sha256": "3aab7271d2b76c48ea3f212ca71f82ff88ac4f576f78cee156821c6952984141"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.3",
+      "stable_id": "rfc6749-s10.3",
+      "title": "Access Tokens",
+      "char_start": 119286,
+      "char_end": 120526,
+      "sha256": "bd2dc1635899db7717b351213b439a9090e40b7b425b90716fa1e4fac9fd4168"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.4",
+      "stable_id": "rfc6749-s10.4",
+      "title": "Refresh Tokens",
+      "char_start": 120526,
+      "char_end": 122184,
+      "sha256": "cd3b22cf2baf5e6b177b71bfac48f23cbe91e6896d110067c8e550f083b6fc4e"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.5",
+      "stable_id": "rfc6749-s10.5",
+      "title": "Authorization Codes",
+      "char_start": 122184,
+      "char_end": 123478,
+      "sha256": "57c4c9a6c0b127c3bb34677871c580b47e87aaa0acdbf0a7078e2e312de2b770"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.6",
+      "stable_id": "rfc6749-s10.6",
+      "title": "Authorization Code Redirection URI Manipulation",
+      "char_start": 123478,
+      "char_end": 125733,
+      "sha256": "c661ad3a64594588fef78a367c30a0b9b3415e9682a9ef21eff3330f7b042626"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.7",
+      "stable_id": "rfc6749-s10.7",
+      "title": "Resource Owner Password Credentials",
+      "char_start": 125733,
+      "char_end": 127060,
+      "sha256": "0152bc470af581c8e8817929c6e7f68ccea68e39d1ef3db225c8f172b901cd1e"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.8",
+      "stable_id": "rfc6749-s10.8",
+      "title": "Request Confidentiality",
+      "char_start": 127060,
+      "char_end": 127479,
+      "sha256": "e59f8fdeab5f91d7b4611524fd628a8a03a620eafc28423e9ed8d390b037440c"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.9",
+      "stable_id": "rfc6749-s10.9",
+      "title": "Ensuring Endpoint Authenticity",
+      "char_start": 127479,
+      "char_end": 127920,
+      "sha256": "f6e21b52f364698bb71b777c28a92ce7f75ea83e4ba8e3ee25ce5fb6e1529f00"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.10",
+      "stable_id": "rfc6749-s10.10",
+      "title": "Credentials-Guessing Attacks",
+      "char_start": 127920,
+      "char_end": 128456,
+      "sha256": "5d03cb98e46f743d3641f5add72ee26ea8eadff3dcb30532e09ba9729dc2e184"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.11",
+      "stable_id": "rfc6749-s10.11",
+      "title": "Phishing Attacks",
+      "char_start": 128456,
+      "char_end": 129628,
+      "sha256": "f01c346d6ee84e5611d07c67a6c4fafa6cb3250fac1684060badc4e704ebe5bb"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.12",
+      "stable_id": "rfc6749-s10.12",
+      "title": "Cross-Site Request Forgery",
+      "char_start": 129628,
+      "char_end": 132131,
+      "sha256": "74667e94f4799beee5976bf160f04d3172d0a6be0a721f40b2afc2729f24213f"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.13",
+      "stable_id": "rfc6749-s10.13",
+      "title": "Clickjacking",
+      "char_start": 132131,
+      "char_end": 133425,
+      "sha256": "9ed6b73f20ed9c3a9bab2d9c4b79730d47d5a5095e4bf2dc64891b99f987fe2b"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.14",
+      "stable_id": "rfc6749-s10.14",
+      "title": "Code Injection and Input Validation",
+      "char_start": 133425,
+      "char_end": 133992,
+      "sha256": "f47ab1086bcdfb209058f7594a9b6a8ad698bbc9f4019372e18867bfa8eadba0"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.15",
+      "stable_id": "rfc6749-s10.15",
+      "title": "Open Redirectors",
+      "char_start": 133992,
+      "char_end": 135060,
+      "sha256": "b9d185f0a986169f96932f77ce23796240fbe3b1d99068b685beb0ac338eed39"
+    },
+    {
+      "rfc": "6749",
+      "section": "10.16",
+      "stable_id": "rfc6749-s10.16",
+      "title": "Misuse of Access Token to Impersonate Resource Owner in Implicit",
+      "char_start": 135060,
+      "char_end": 137340,
+      "sha256": "56a118d4732468ae31920118737530f14389178627ef28d1e08cf45c6468a7f2"
+    },
+    {
+      "rfc": "6749",
+      "section": "11",
+      "stable_id": "rfc6749-s11",
+      "title": "IANA Considerations",
+      "char_start": 137340,
+      "char_end": 137366,
+      "sha256": "369ce94f18f170b200c67dea7124a84bdc34bb9471686074dc2800a9e5143c24"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.1",
+      "stable_id": "rfc6749-s11.1",
+      "title": "OAuth Access Token Types Registry",
+      "char_start": 137366,
+      "char_end": 138535,
+      "sha256": "097af8483cdd6493b7b04073b4c63e802f23fdf9f1cec49b44ba65041ad83b21"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.1.1",
+      "stable_id": "rfc6749-s11.1.1",
+      "title": "Registration Template",
+      "char_start": 138535,
+      "char_end": 139731,
+      "sha256": "e620c5a8d714baaec3307b602a8ccf8a86e86f1a1ecc8800dbdbb43db20944a7"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.2",
+      "stable_id": "rfc6749-s11.2",
+      "title": "OAuth Parameters Registry",
+      "char_start": 139731,
+      "char_end": 141034,
+      "sha256": "37c0a8cf93ae1a6a3d3794cf59660e0e48be5b3ccae9a5e6863496b1554db816"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.2.1",
+      "stable_id": "rfc6749-s11.2.1",
+      "title": "Registration Template",
+      "char_start": 141034,
+      "char_end": 141985,
+      "sha256": "679895572da628dc7049513ac5088eb3258f48fe76ae9aa71154a8aa98683a18"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.2.2",
+      "stable_id": "rfc6749-s11.2.2",
+      "title": "Initial Registry Contents",
+      "char_start": 141985,
+      "char_end": 145145,
+      "sha256": "5e5e97390a89dbfa3f85fd2bb73d45d8ffbffb5942b27c5282f1a6819a5c67f5"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.3",
+      "stable_id": "rfc6749-s11.3",
+      "title": "OAuth Authorization Endpoint Response Types Registry",
+      "char_start": 145145,
+      "char_end": 146398,
+      "sha256": "20b73971e2bd6d85ed821baab78483930069ee27312b5c3eacd5172f34cf876c"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.3.1",
+      "stable_id": "rfc6749-s11.3.1",
+      "title": "Registration Template",
+      "char_start": 146398,
+      "char_end": 147152,
+      "sha256": "3eacf98d9821d7fe3e07ed9250ef7776cea532e41a5e491b086326d15266700f"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.3.2",
+      "stable_id": "rfc6749-s11.3.2",
+      "title": "Initial Registry Contents",
+      "char_start": 147152,
+      "char_end": 147485,
+      "sha256": "ffcf8bf117814f512e749ac482d5bd0f241667466d31703599144b26213a4afe"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.4",
+      "stable_id": "rfc6749-s11.4",
+      "title": "OAuth Extensions Error Registry",
+      "char_start": 147485,
+      "char_end": 148930,
+      "sha256": "c9c85d47104d7ddb582a7b06c22e7ff73829e7de906d066c8def4105eb70bcff"
+    },
+    {
+      "rfc": "6749",
+      "section": "11.4.1",
+      "stable_id": "rfc6749-s11.4.1",
+      "title": "Registration Template",
+      "char_start": 148930,
+      "char_end": 150137,
+      "sha256": "ff08c4bfd45f672345b41c579c926b410192fb3d4bc52343655378136a90dd86"
+    },
+    {
+      "rfc": "6749",
+      "section": "12",
+      "stable_id": "rfc6749-s12",
+      "title": "References",
+      "char_start": 150137,
+      "char_end": 150154,
+      "sha256": "c091d04a6fe372b0c96ab37f6c724b533bfd6a1f0077305c02f65178012b8c8b"
+    },
+    {
+      "rfc": "6749",
+      "section": "12.1",
+      "stable_id": "rfc6749-s12.1",
+      "title": "Normative References",
+      "char_start": 150154,
+      "char_end": 153359,
+      "sha256": "907363a1c20d92b62c89c5b17dc2b5f68e81d8b8b6f744882dd7cce1f6532e56"
+    },
+    {
+      "rfc": "6749",
+      "section": "12.2",
+      "stable_id": "rfc6749-s12.2",
+      "title": "Informative References",
+      "char_start": 153359,
+      "char_end": 163498,
+      "sha256": "3eafad3b31e3c7bdae043d4f0705bc3240282423f6d513b2864283bfa2874e4b"
+    },
+    {
+      "rfc": "6750",
+      "section": "1",
+      "stable_id": "rfc6750-s1",
+      "title": "Introduction",
+      "char_start": 4198,
+      "char_end": 5849,
+      "sha256": "c6d5ea5e1c79b11ee8f5783557a5b94e4a5d3ae8d351e96ce08ebf16d4dcee50"
+    },
+    {
+      "rfc": "6750",
+      "section": "1.1",
+      "stable_id": "rfc6750-s1.1",
+      "title": "Notational Conventions",
+      "char_start": 5849,
+      "char_end": 6522,
+      "sha256": "b404060289575075ba6370f5da4e8dbfeef0341ba1c029b4c362fdb017315424"
+    },
+    {
+      "rfc": "6750",
+      "section": "1.2",
+      "stable_id": "rfc6750-s1.2",
+      "title": "Terminology",
+      "char_start": 6522,
+      "char_end": 6966,
+      "sha256": "dcc164ef0ec152a1058a7156771a23fb1b433ebd9447d83459f76492d01a5617"
+    },
+    {
+      "rfc": "6750",
+      "section": "1.3",
+      "stable_id": "rfc6750-s1.3",
+      "title": "Overview",
+      "char_start": 6966,
+      "char_end": 9897,
+      "sha256": "cdf33f8a538f7a2880a6b037a76092ef7697c4d8bb6d0046b51c6455dfed723a"
+    },
+    {
+      "rfc": "6750",
+      "section": "2",
+      "stable_id": "rfc6750-s2",
+      "title": "Authenticated Requests",
+      "char_start": 9897,
+      "char_end": 10280,
+      "sha256": "b710318b0cab2f3d4ccddac949b983ba4ff82b8036c6f414443992837e38c501"
+    },
+    {
+      "rfc": "6750",
+      "section": "2.1",
+      "stable_id": "rfc6750-s2.1",
+      "title": "Authorization Request Header Field",
+      "char_start": 10280,
+      "char_end": 11519,
+      "sha256": "6a29be3d06f06da24532eb70a4ba94326060f33891e3faaa55198cd297dde3da"
+    },
+    {
+      "rfc": "6750",
+      "section": "2.2",
+      "stable_id": "rfc6750-s2.2",
+      "title": "Form-Encoded Body Parameter",
+      "char_start": 11519,
+      "char_end": 13309,
+      "sha256": "81f6d0b321f328003c47d46cc5b4efe25022461176d1db1079961777ea60343f"
+    },
+    {
+      "rfc": "6750",
+      "section": "2.3",
+      "stable_id": "rfc6750-s2.3",
+      "title": "URI Query Parameter",
+      "char_start": 13309,
+      "char_end": 15220,
+      "sha256": "cfe77bad2177135f5109f77c10ef5cdbcc4bd27bb168371c90e3ef394cc997e7"
+    },
+    {
+      "rfc": "6750",
+      "section": "3",
+      "stable_id": "rfc6750-s3",
+      "title": "The WWW-Authenticate Response Header Field",
+      "char_start": 15220,
+      "char_end": 19424,
+      "sha256": "a93c6b6925971da08b0d9f0105d300b7db5020ddb7e0a9f97e997f0dc42b1cf4"
+    },
+    {
+      "rfc": "6750",
+      "section": "3.1",
+      "stable_id": "rfc6750-s3.1",
+      "title": "Error Codes",
+      "char_start": 19424,
+      "char_end": 21144,
+      "sha256": "0b5a67af78fc46b51e8959ffd43bfa2cd66776db0f41020e74b865b30660d04d"
+    },
+    {
+      "rfc": "6750",
+      "section": "4",
+      "stable_id": "rfc6750-s4",
+      "title": "Example Access Token Response",
+      "char_start": 21144,
+      "char_end": 21616,
+      "sha256": "45d12ff5c097962f3155a0b2389b8cab98ad3e447e89ce7410785f80bfbfa15f"
+    },
+    {
+      "rfc": "6750",
+      "section": "5",
+      "stable_id": "rfc6750-s5",
+      "title": "Security Considerations",
+      "char_start": 21616,
+      "char_end": 21803,
+      "sha256": "72320dd93fdf1685ea338a785daec0753b2b0f33fa1e1b73052b72341f85e029"
+    },
+    {
+      "rfc": "6750",
+      "section": "5.1",
+      "stable_id": "rfc6750-s5.1",
+      "title": "Security Threats",
+      "char_start": 21803,
+      "char_end": 23284,
+      "sha256": "b0b6194b367886e4b8c3902d8a1d9783ab505d200f177bbf6aa77c86bcc768ea"
+    },
+    {
+      "rfc": "6750",
+      "section": "5.2",
+      "stable_id": "rfc6750-s5.2",
+      "title": "Threat Mitigation",
+      "char_start": 23284,
+      "char_end": 28447,
+      "sha256": "cd3931e884e17f98a621986eec8e8e4b9abcbb6683d02cbf280ea9bdfde6bf3a"
+    },
+    {
+      "rfc": "6750",
+      "section": "5.3",
+      "stable_id": "rfc6750-s5.3",
+      "title": "Summary of Recommendations",
+      "char_start": 28447,
+      "char_end": 30973,
+      "sha256": "96100652e98304bf70589955f77087b9018769286e5d04d6000871dd0571cfa9"
+    },
+    {
+      "rfc": "6750",
+      "section": "6",
+      "stable_id": "rfc6750-s6",
+      "title": "IANA Considerations",
+      "char_start": 30973,
+      "char_end": 30998,
+      "sha256": "44ce52ec2c1ce2abaa8c3a968b2d672f6c4ad9a57cd6294adcf643cecba94600"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.1",
+      "stable_id": "rfc6750-s6.1",
+      "title": "OAuth Access Token Type Registration",
+      "char_start": 30998,
+      "char_end": 31173,
+      "sha256": "e46c7b7396206c8487f24c1d71fa47c92ab8a1c5c3342324d55cad805667a77c"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.1.1",
+      "stable_id": "rfc6750-s6.1.1",
+      "title": "The \"Bearer\" OAuth Access Token Type",
+      "char_start": 31173,
+      "char_end": 31439,
+      "sha256": "7116c1478deb0af6a3dfccd638d3a2675ef54e55fbdfdd498c4d4478a4bdb220"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.2",
+      "stable_id": "rfc6750-s6.2",
+      "title": "OAuth Extensions Error Registration",
+      "char_start": 31439,
+      "char_end": 31606,
+      "sha256": "f2f61132b8fd5e34f13760d88630971ece05d3d8ded2adcdaf98f5f7fbac0132"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.2.1",
+      "stable_id": "rfc6750-s6.2.1",
+      "title": "The \"invalid_request\" Error Value",
+      "char_start": 31606,
+      "char_end": 32048,
+      "sha256": "767a7544052aa913856d41eac32b27b56aa0a5d8aeaf5cd0148fc0b1b1267ff6"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.2.2",
+      "stable_id": "rfc6750-s6.2.2",
+      "title": "The \"invalid_token\" Error Value",
+      "char_start": 32048,
+      "char_end": 32331,
+      "sha256": "a012da9c106bdab28b5e3f6337a265c40a3228cbbfbda3e63ad4be404b5a3b9c"
+    },
+    {
+      "rfc": "6750",
+      "section": "6.2.3",
+      "stable_id": "rfc6750-s6.2.3",
+      "title": "The \"insufficient_scope\" Error Value",
+      "char_start": 32331,
+      "char_end": 32624,
+      "sha256": "d8a008ce30b56314a9a98accca1ac9c050dc398e9b22441fb31c175e4a1edc2e"
+    },
+    {
+      "rfc": "6750",
+      "section": "7",
+      "stable_id": "rfc6750-s7",
+      "title": "References",
+      "char_start": 32624,
+      "char_end": 32640,
+      "sha256": "770a7aaefc1d66d8ecb94af4018e6dc23c718925ad36ee097d1d05b450ee6bf3"
+    },
+    {
+      "rfc": "6750",
+      "section": "7.1",
+      "stable_id": "rfc6750-s7.1",
+      "title": "Normative References",
+      "char_start": 32640,
+      "char_end": 35492,
+      "sha256": "a9122ab35d2bb34e89a53a65a8c407a3d811dabeef25b9db0a9de8533cfa6072"
+    },
+    {
+      "rfc": "6750",
+      "section": "7.2",
+      "stable_id": "rfc6750-s7.2",
+      "title": "Informative References",
+      "char_start": 35492,
+      "char_end": 38949,
+      "sha256": "9830a8285a23257859339431ccb2977ea5a563139c06e4e88955fe06483e9059"
+    },
+    {
+      "rfc": "7515",
+      "section": "1",
+      "stable_id": "rfc7515-s1",
+      "title": "Introduction",
+      "char_start": 9115,
+      "char_end": 10396,
+      "sha256": "10bd719c316ea7aab8b1750c71da449ce5ea559d6183f4ee1685c640c800d494"
+    },
+    {
+      "rfc": "7515",
+      "section": "1.1",
+      "stable_id": "rfc7515-s1.1",
+      "title": "Notational Conventions",
+      "char_start": 10396,
+      "char_end": 11421,
+      "sha256": "bfe03b2a13c49838f98258ab06f3a91591df45662ecb0a802e0c7171582177aa"
+    },
+    {
+      "rfc": "7515",
+      "section": "2",
+      "stable_id": "rfc7515-s2",
+      "title": "Terminology",
+      "char_start": 11421,
+      "char_end": 15470,
+      "sha256": "3e0a9ecba931721f3cc10783ca6cb8f72e93301f17c8494c245dd062d6a9ba8e"
+    },
+    {
+      "rfc": "7515",
+      "section": "3",
+      "stable_id": "rfc7515-s3",
+      "title": "JSON Web Signature (JWS) Overview",
+      "char_start": 15470,
+      "char_end": 16509,
+      "sha256": "0c7163affc0d5ac99b9287ff0ad2cd54263cfa39b8064a4d3107c23c21a7d7b2"
+    },
+    {
+      "rfc": "7515",
+      "section": "3.1",
+      "stable_id": "rfc7515-s3.1",
+      "title": "JWS Compact Serialization Overview",
+      "char_start": 16509,
+      "char_end": 17145,
+      "sha256": "468976d795f8a2ae02d928767e4417ee8498a7f4c5dbf98dc49fc5f9e1dfee26"
+    },
+    {
+      "rfc": "7515",
+      "section": "3.2",
+      "stable_id": "rfc7515-s3.2",
+      "title": "JWS JSON Serialization Overview",
+      "char_start": 17145,
+      "char_end": 18216,
+      "sha256": "558310a3cc806865b9a3bd7c05fd72aaedda4654344955a8a7bca02de76beefb"
+    },
+    {
+      "rfc": "7515",
+      "section": "3.3",
+      "stable_id": "rfc7515-s3.3",
+      "title": "Example JWS",
+      "char_start": 18216,
+      "char_end": 20453,
+      "sha256": "82b7c965be02f50ee549a989092658752fa71e4a7bec790604bd6377baaf2407"
+    },
+    {
+      "rfc": "7515",
+      "section": "4",
+      "stable_id": "rfc7515-s4",
+      "title": "JOSE Header",
+      "char_start": 20453,
+      "char_end": 21850,
+      "sha256": "00314e64d6ed3fdebe1692998eda48e272508362e97768815b1c232cadc8c434"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1",
+      "stable_id": "rfc7515-s4.1",
+      "title": "Registered Header Parameter Names",
+      "char_start": 21850,
+      "char_end": 22335,
+      "sha256": "be1be29c81718e5537f4c0bec06eb16c30b670bc56d3e4dafc924b3f5ee4f30c"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.1",
+      "stable_id": "rfc7515-s4.1.1",
+      "title": "\"alg\" (Algorithm) Header Parameter",
+      "char_start": 22335,
+      "char_end": 23348,
+      "sha256": "529acf3fcc8eb7383b748c0ea3b9e4480db02ff0005a81f0207b74bda651e981"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.2",
+      "stable_id": "rfc7515-s4.1.2",
+      "title": "\"jku\" (JWK Set URL) Header Parameter",
+      "char_start": 23348,
+      "char_end": 24175,
+      "sha256": "797db5500ca1ab5bcf5cd854b926e07e27af0f62ec47cc26a451a70f995c5e62"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.3",
+      "stable_id": "rfc7515-s4.1.3",
+      "title": "\"jwk\" (JSON Web Key) Header Parameter",
+      "char_start": 24175,
+      "char_end": 24448,
+      "sha256": "dad1dc97705fded83b6f5fe9ecdc3406a34a2684ebe729160149242b0bd60ddc"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.4",
+      "stable_id": "rfc7515-s4.1.4",
+      "title": "\"kid\" (Key ID) Header Parameter",
+      "char_start": 24448,
+      "char_end": 24915,
+      "sha256": "9cfe2a64ed636ea6cf6a75f45d7bf6b031e8f6dfb23ef1418dc24a448e6c047c"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.5",
+      "stable_id": "rfc7515-s4.1.5",
+      "title": "\"x5u\" (X.509 URL) Header Parameter",
+      "char_start": 24915,
+      "char_end": 26047,
+      "sha256": "73273b518cd2047ed8bb5f057772ec644c2618cf0f18b8995a5617c9d5cb8ee2"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.6",
+      "stable_id": "rfc7515-s4.1.6",
+      "title": "\"x5c\" (X.509 Certificate Chain) Header Parameter",
+      "char_start": 26047,
+      "char_end": 27255,
+      "sha256": "7ae59d2ef2183b0e4efcd60854d7b1ccc4a13d53fbfe31be82511f045a03c8c8"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.7",
+      "stable_id": "rfc7515-s4.1.7",
+      "title": "\"x5t\" (X.509 Certificate SHA-1 Thumbprint) Header Parameter",
+      "char_start": 27255,
+      "char_end": 27707,
+      "sha256": "4c718b0099b8d834a9907621be190ecea8e624e499886306c55a989bb1ea8c58"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.8",
+      "stable_id": "rfc7515-s4.1.8",
+      "title": "\"x5t#S256\" (X.509 Certificate SHA-256 Thumbprint) Header",
+      "char_start": 27707,
+      "char_end": 28182,
+      "sha256": "55bcc7e5f0f33033b6e8a7ad5aed92885a01b1a93d36acb97e27032b37775a0e"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.9",
+      "stable_id": "rfc7515-s4.1.9",
+      "title": "\"typ\" (Type) Header Parameter",
+      "char_start": 28182,
+      "char_end": 30246,
+      "sha256": "528433222650c9ddea02ad76b8f645028423237cda7758b21399575830edc38c"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.10",
+      "stable_id": "rfc7515-s4.1.10",
+      "title": "\"cty\" (Content Type) Header Parameter",
+      "char_start": 30246,
+      "char_end": 31909,
+      "sha256": "ccc87235195f74aeabdcb7264ddfbbe4b3b78ae50956d429fbf522934ec107e6"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.1.11",
+      "stable_id": "rfc7515-s4.1.11",
+      "title": "\"crit\" (Critical) Header Parameter",
+      "char_start": 31909,
+      "char_end": 33298,
+      "sha256": "19064ed3c06d0a786a86d55147121f374dd2dd9aac94c07703545bcedf672062"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.2",
+      "stable_id": "rfc7515-s4.2",
+      "title": "Public Header Parameter Names",
+      "char_start": 33298,
+      "char_end": 34002,
+      "sha256": "f23283a6783f5b946afc14ef2c33d91164ec255fd33571f4db399e3badba3e6a"
+    },
+    {
+      "rfc": "7515",
+      "section": "4.3",
+      "stable_id": "rfc7515-s4.3",
+      "title": "Private Header Parameter Names",
+      "char_start": 34002,
+      "char_end": 34554,
+      "sha256": "c4d523e09d32f96713f0879285d41fcd0ddac87f15a2ec4fd26f15960ec3ca16"
+    },
+    {
+      "rfc": "7515",
+      "section": "5",
+      "stable_id": "rfc7515-s5",
+      "title": "Producing and Consuming JWSs",
+      "char_start": 34554,
+      "char_end": 34588,
+      "sha256": "ca5c02dd9fed2a09a7f420464cd4dcce1c69db566f2594486b95211ecdec4d5e"
+    },
+    {
+      "rfc": "7515",
+      "section": "5.1",
+      "stable_id": "rfc7515-s5.1",
+      "title": "Message Signature or MAC Computation",
+      "char_start": 34588,
+      "char_end": 36526,
+      "sha256": "f9435c6dd74a0f47b628469cef50cdf8f2c12e36609279d0544900d76a4002fe"
+    },
+    {
+      "rfc": "7515",
+      "section": "5.2",
+      "stable_id": "rfc7515-s5.2",
+      "title": "Message Signature or MAC Validation",
+      "char_start": 36526,
+      "char_end": 41467,
+      "sha256": "3ef14f316ad11616abe0c42ba17d7567cec04239aa466ac626575dee8e7f9506"
+    },
+    {
+      "rfc": "7515",
+      "section": "5.3",
+      "stable_id": "rfc7515-s5.3",
+      "title": "String Comparison Rules",
+      "char_start": 41467,
+      "char_end": 43502,
+      "sha256": "bb6067d6615f6c249bd9d1b1bec18b34a4c2a7deb0836206cf9cc0165df09634"
+    },
+    {
+      "rfc": "7515",
+      "section": "6",
+      "stable_id": "rfc7515-s6",
+      "title": "Key Identification",
+      "char_start": 43502,
+      "char_end": 45071,
+      "sha256": "4f9a97f77a7b8db599b7e05e90180ccfa1035a2f8aa2c0ddf76ff28a554d027e"
+    },
+    {
+      "rfc": "7515",
+      "section": "7",
+      "stable_id": "rfc7515-s7",
+      "title": "Serializations",
+      "char_start": 45071,
+      "char_end": 45704,
+      "sha256": "f0070dcce7abad8491b453b93bd98415e06ac77ef6b45296186c41e4b4a988b1"
+    },
+    {
+      "rfc": "7515",
+      "section": "7.1",
+      "stable_id": "rfc7515-s7.1",
+      "title": "JWS Compact Serialization",
+      "char_start": 45704,
+      "char_end": 46142,
+      "sha256": "3df381f7e3339d41dad895b1a35f6844e95c509a9b181352255935d706fbffb0"
+    },
+    {
+      "rfc": "7515",
+      "section": "7.2",
+      "stable_id": "rfc7515-s7.2",
+      "title": "JWS JSON Serialization",
+      "char_start": 46142,
+      "char_end": 46794,
+      "sha256": "08fe47a77363d44edfcdad995bcdfc2eb1f7b8c561f4bae28729e9bc385e5048"
+    },
+    {
+      "rfc": "7515",
+      "section": "7.2.1",
+      "stable_id": "rfc7515-s7.2.1",
+      "title": "General JWS JSON Serialization Syntax",
+      "char_start": 46794,
+      "char_end": 50351,
+      "sha256": "24c4b1c920231cb12da479d7eb7fffc647b75f269ef457c51d0886272c6e123e"
+    },
+    {
+      "rfc": "7515",
+      "section": "7.2.2",
+      "stable_id": "rfc7515-s7.2.2",
+      "title": "Flattened JWS JSON Serialization Syntax",
+      "char_start": 50351,
+      "char_end": 51619,
+      "sha256": "cb227b61524dbcadd03bae482b7364039a4d1f3770f1683d7c0834a2d6783437"
+    },
+    {
+      "rfc": "7515",
+      "section": "8",
+      "stable_id": "rfc7515-s8",
+      "title": "TLS Requirements",
+      "char_start": 51619,
+      "char_end": 52788,
+      "sha256": "b385adac67cbf8fdcf052e0f206648a2838c3b4ff266f8163f79015ea25d7687"
+    },
+    {
+      "rfc": "7515",
+      "section": "9",
+      "stable_id": "rfc7515-s9",
+      "title": "IANA Considerations",
+      "char_start": 52788,
+      "char_end": 54992,
+      "sha256": "3f1a5ebaa20beff90805f3ed2a5e9ef8f444bb860e093959197119caa4eda652"
+    },
+    {
+      "rfc": "7515",
+      "section": "9.1",
+      "stable_id": "rfc7515-s9.1",
+      "title": "JSON Web Signature and Encryption Header Parameters Registry",
+      "char_start": 54992,
+      "char_end": 55588,
+      "sha256": "92e2dd1b2bf5914f925ad09c00d90a8216f29eacd9ea735c2de7a534a58571e6"
+    },
+    {
+      "rfc": "7515",
+      "section": "9.1.1",
+      "stable_id": "rfc7515-s9.1.1",
+      "title": "Registration Template",
+      "char_start": 55588,
+      "char_end": 57034,
+      "sha256": "3d5352f6106fa6b631ee969ca0614511ecc0176499733c55bd2851b5d1b1bb71"
+    },
+    {
+      "rfc": "7515",
+      "section": "9.1.2",
+      "stable_id": "rfc7515-s9.1.2",
+      "title": "Initial Registry Contents",
+      "char_start": 57034,
+      "char_end": 59936,
+      "sha256": "c64c2198ca3432c07e4e5d15f52a786b0b3c0d24e9240bb481792e91d8be237d"
+    },
+    {
+      "rfc": "7515",
+      "section": "9.2",
+      "stable_id": "rfc7515-s9.2",
+      "title": "Media Type Registration",
+      "char_start": 59936,
+      "char_end": 59967,
+      "sha256": "f2ced7fc3f4b913cfc89197aa48fe3a02d5c2489850257600f86915c675d3617"
+    },
+    {
+      "rfc": "7515",
+      "section": "9.2.1",
+      "stable_id": "rfc7515-s9.2.1",
+      "title": "Registry Contents",
+      "char_start": 59967,
+      "char_end": 62893,
+      "sha256": "b460ad23ffd039c73eb42c71490b979d418d8fb2e596fc8963757b4eb8bc4d8c"
+    },
+    {
+      "rfc": "7515",
+      "section": "10",
+      "stable_id": "rfc7515-s10",
+      "title": "Security Considerations",
+      "char_start": 62893,
+      "char_end": 63608,
+      "sha256": "6422d76f108a58215465bd300bcf33de4527b76b46a80cb1be2eca0e84cb81ec"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.1",
+      "stable_id": "rfc7515-s10.1",
+      "title": "Key Entropy and Random Values",
+      "char_start": 63608,
+      "char_end": 64581,
+      "sha256": "871b8a42eda1eb0234aa9a1e5aa5e67f68c33531410451f8dc9bddbdd6ca7896"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.2",
+      "stable_id": "rfc7515-s10.2",
+      "title": "Key Protection",
+      "char_start": 64581,
+      "char_end": 64904,
+      "sha256": "66ebffd8597c7cb9b3b9620b4ba39f58a7eba0465a789d460dc32f66d7c60777"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.3",
+      "stable_id": "rfc7515-s10.3",
+      "title": "Key Origin Authentication",
+      "char_start": 64904,
+      "char_end": 65304,
+      "sha256": "7902dce2656f2b0c9919fa7694c2b6f5fc030747880ebcae2f36e2c5bd99cc59"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.4",
+      "stable_id": "rfc7515-s10.4",
+      "title": "Cryptographic Agility",
+      "char_start": 65304,
+      "char_end": 65420,
+      "sha256": "a422d87d8e6f10719cf49bf43f9a741707dc221b6d256df7d998d05711d3aef6"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.5",
+      "stable_id": "rfc7515-s10.5",
+      "title": "Differences between Digital Signatures and MACs",
+      "char_start": 65420,
+      "char_end": 66880,
+      "sha256": "b2bfb68414efb713573d5c0f3da3f49de0d6d79b30370ed6d812981666b9a658"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.6",
+      "stable_id": "rfc7515-s10.6",
+      "title": "Algorithm Validation",
+      "char_start": 66880,
+      "char_end": 67659,
+      "sha256": "af41d03d607b9befaf682c22e7492ff7881f3082f2ae23b1319998fe02cfe446"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.7",
+      "stable_id": "rfc7515-s10.7",
+      "title": "Algorithm Protection",
+      "char_start": 67659,
+      "char_end": 69482,
+      "sha256": "5085fb8acfc2af7fb755b17089d928936120a247618813b09b5778beb57d8be0"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.8",
+      "stable_id": "rfc7515-s10.8",
+      "title": "Chosen Plaintext Attacks",
+      "char_start": 69482,
+      "char_end": 69676,
+      "sha256": "4002ce89640521da43778ab4ad3173b5b1c5ed4c74f406b2e22b08cd4617360c"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.9",
+      "stable_id": "rfc7515-s10.9",
+      "title": "Timing Attacks",
+      "char_start": 69676,
+      "char_end": 70013,
+      "sha256": "995e7b63d84cdcab851e2552be4f2dc36feb611ec3343f0e91766951dcbae980"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.10",
+      "stable_id": "rfc7515-s10.10",
+      "title": "Replay Protection",
+      "char_start": 70013,
+      "char_end": 70381,
+      "sha256": "805bd4ab46f448ab53f50eebc7bfbcb0c6b0231ea76de6f1bfa461c6f0ba78dd"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.11",
+      "stable_id": "rfc7515-s10.11",
+      "title": "SHA-1 Certificate Thumbprints",
+      "char_start": 70381,
+      "char_end": 71418,
+      "sha256": "79c3e074b6ebe4020f36455b25a08dcdbdb1a38f4be3d66369a5c4b72706f159"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.12",
+      "stable_id": "rfc7515-s10.12",
+      "title": "JSON Security Considerations",
+      "char_start": 71418,
+      "char_end": 73187,
+      "sha256": "b780a2c227e10e8fa7705703f3f4c0ca4d8e966b1b4a752ac135d131b81d0bff"
+    },
+    {
+      "rfc": "7515",
+      "section": "10.13",
+      "stable_id": "rfc7515-s10.13",
+      "title": "Unicode Comparison Security Considerations",
+      "char_start": 73187,
+      "char_end": 74377,
+      "sha256": "49f3c5308497b5f0699167efc09ef6cb158751a9e8bfe3dfee093249c8cb0f6a"
+    },
+    {
+      "rfc": "7515",
+      "section": "11",
+      "stable_id": "rfc7515-s11",
+      "title": "References",
+      "char_start": 74377,
+      "char_end": 74394,
+      "sha256": "15ee0fbd38b8db25f6fc7b4fb8fa69d992ebfe4b006eaaf8c71cc56a11f9e53f"
+    },
+    {
+      "rfc": "7515",
+      "section": "11.1",
+      "stable_id": "rfc7515-s11.1",
+      "title": "Normative References",
+      "char_start": 74394,
+      "char_end": 79555,
+      "sha256": "912db9141388eccf86c1d745a2a095b7a0370a0213db7409dd663f8064a833b8"
+    },
+    {
+      "rfc": "7515",
+      "section": "11.2",
+      "stable_id": "rfc7515-s11.2",
+      "title": "Informative References",
+      "char_start": 79555,
+      "char_end": 131110,
+      "sha256": "3b2a15ea4d005c06c4d669ad5fea619ffa6bc7c0a83e1f60b1514f1993243b4a"
+    },
+    {
+      "rfc": "7516",
+      "section": "1",
+      "stable_id": "rfc7516-s1",
+      "title": "Introduction",
+      "char_start": 9869,
+      "char_end": 11006,
+      "sha256": "cc473a156273084e6fa98b58c92f3cf0ddde3d1a1089ed053bdaec4c2bd70910"
+    },
+    {
+      "rfc": "7516",
+      "section": "1.1",
+      "stable_id": "rfc7516-s1.1",
+      "title": "Notational Conventions",
+      "char_start": 11006,
+      "char_end": 12042,
+      "sha256": "4d2983287e478185d31cf9afcbfe6a81cc0f94993cfda1b01209fa2b4645130b"
+    },
+    {
+      "rfc": "7516",
+      "section": "2",
+      "stable_id": "rfc7516-s2",
+      "title": "Terminology",
+      "char_start": 12042,
+      "char_end": 17857,
+      "sha256": "686afd5e145536237f48f87490ee51482c3d33878b9538e9970b5c0b0da48236"
+    },
+    {
+      "rfc": "7516",
+      "section": "3",
+      "stable_id": "rfc7516-s3",
+      "title": "JSON Web Encryption (JWE) Overview",
+      "char_start": 17857,
+      "char_end": 19303,
+      "sha256": "c173a37df6ae1491c82f16d0608170ed20a200b26bad5254171618c897d9d322"
+    },
+    {
+      "rfc": "7516",
+      "section": "3.1",
+      "stable_id": "rfc7516-s3.1",
+      "title": "JWE Compact Serialization Overview",
+      "char_start": 19303,
+      "char_end": 20105,
+      "sha256": "f7225f54586a6dde1410ee1f7d428a64b329d9523f28acea72342b6b5974826e"
+    },
+    {
+      "rfc": "7516",
+      "section": "3.2",
+      "stable_id": "rfc7516-s3.2",
+      "title": "JWE JSON Serialization Overview",
+      "char_start": 20105,
+      "char_end": 21675,
+      "sha256": "26fb8555c81edde3e81076bb023737a2ee638967dd0985d1d6e416dc76cfb0d6"
+    },
+    {
+      "rfc": "7516",
+      "section": "3.3",
+      "stable_id": "rfc7516-s3.3",
+      "title": "Example JWE",
+      "char_start": 21675,
+      "char_end": 24628,
+      "sha256": "b6b2bc75d3af041f25d0f01f09e6dc51e9ae66cd575ed33ebaee401fea61c85e"
+    },
+    {
+      "rfc": "7516",
+      "section": "4",
+      "stable_id": "rfc7516-s4",
+      "title": "JOSE Header",
+      "char_start": 24628,
+      "char_end": 25118,
+      "sha256": "6b2e0c23d24206cab9e516172346455ba2bd8cbab8d7f60935f6d0cb7ffea315"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1",
+      "stable_id": "rfc7516-s4.1",
+      "title": "Registered Header Parameter Names",
+      "char_start": 25118,
+      "char_end": 25730,
+      "sha256": "2aaf6f7d20575c65d0c5a6865daed3d33675fc116388010e716fbfeb4ca4ab75"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.1",
+      "stable_id": "rfc7516-s4.1.1",
+      "title": "\"alg\" (Algorithm) Header Parameter",
+      "char_start": 25730,
+      "char_end": 26472,
+      "sha256": "edde9bd830460122b7c8b7cfefb010f193d5080a2e448c0803cbb0a808ddc7c7"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.2",
+      "stable_id": "rfc7516-s4.1.2",
+      "title": "\"enc\" (Encryption Algorithm) Header Parameter",
+      "char_start": 26472,
+      "char_end": 27547,
+      "sha256": "b5c51ed1d8b8a094b96b46a6b0ac445f056d9074320218fd8de20ddc6f02f3cf"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.3",
+      "stable_id": "rfc7516-s4.1.3",
+      "title": "\"zip\" (Compression Algorithm) Header Parameter",
+      "char_start": 27547,
+      "char_end": 28543,
+      "sha256": "a757e4337b5e46a3535628fd0260a7e47bea0477376ac3f16d134fd833792fe6"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.4",
+      "stable_id": "rfc7516-s4.1.4",
+      "title": "\"jku\" (JWK Set URL) Header Parameter",
+      "char_start": 28543,
+      "char_end": 28898,
+      "sha256": "7f0a6bc29840d75c97123df2cfd7171d9fedc6a1e3fca5b3a70e8a84f343c598"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.5",
+      "stable_id": "rfc7516-s4.1.5",
+      "title": "\"jwk\" (JSON Web Key) Header Parameter",
+      "char_start": 28898,
+      "char_end": 29232,
+      "sha256": "cd0b63604663c312db99e34ca8d2c135019f0130d0300177db9ed6dbd3d03b8b"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.6",
+      "stable_id": "rfc7516-s4.1.6",
+      "title": "\"kid\" (Key ID) Header Parameter",
+      "char_start": 29232,
+      "char_end": 29670,
+      "sha256": "c9d2f364c280bdeebf88e955597bdcef8522c27663234c1b7b196c3e2fedde5e"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.7",
+      "stable_id": "rfc7516-s4.1.7",
+      "title": "\"x5u\" (X.509 URL) Header Parameter",
+      "char_start": 29670,
+      "char_end": 30066,
+      "sha256": "90b76f5d4ef94dbe0962c44ce244c2ba579d434bf02a90bdb4633316f479d703"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.8",
+      "stable_id": "rfc7516-s4.1.8",
+      "title": "\"x5c\" (X.509 Certificate Chain) Header Parameter",
+      "char_start": 30066,
+      "char_end": 30687,
+      "sha256": "b735caabbf1893b72492eb68c90452357a874f00f4b530e091cb3c63758a43b8"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.9",
+      "stable_id": "rfc7516-s4.1.9",
+      "title": "\"x5t\" (X.509 Certificate SHA-1 Thumbprint) Header Parameter",
+      "char_start": 30687,
+      "char_end": 31181,
+      "sha256": "cba9d668040609f71fdebbf63dad040cee2439dbff3b35ba837db96d27350238"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.10",
+      "stable_id": "rfc7516-s4.1.10",
+      "title": "\"x5t#S256\" (X.509 Certificate SHA-256 Thumbprint) Header",
+      "char_start": 31181,
+      "char_end": 31700,
+      "sha256": "e5534b1b6d4196be5b1c81734fda9c70066210429bb10893af2d63ff809c4f50"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.11",
+      "stable_id": "rfc7516-s4.1.11",
+      "title": "\"typ\" (Type) Header Parameter",
+      "char_start": 31700,
+      "char_end": 31932,
+      "sha256": "58a71f66e9e81fc4a5a27c4feb39be0c32219296c33c553e93c165d4110044d2"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.12",
+      "stable_id": "rfc7516-s4.1.12",
+      "title": "\"cty\" (Content Type) Header Parameter",
+      "char_start": 31932,
+      "char_end": 32191,
+      "sha256": "fd42a301379e9e7e8af6c901c033bf3140eb0cd3af1276e7f25befce6e4c8f46"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.1.13",
+      "stable_id": "rfc7516-s4.1.13",
+      "title": "\"crit\" (Critical) Header Parameter",
+      "char_start": 32191,
+      "char_end": 32486,
+      "sha256": "2475d59d7c5ec971a00fe21935082b67f98aaddb50eccff8a3b79199ef0bbb32"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.2",
+      "stable_id": "rfc7516-s4.2",
+      "title": "Public Header Parameter Names",
+      "char_start": 32486,
+      "char_end": 33338,
+      "sha256": "ab6db5985c2a08df2f73f59c756424ba568283eab1f85a98c05907bd10ddbde3"
+    },
+    {
+      "rfc": "7516",
+      "section": "4.3",
+      "stable_id": "rfc7516-s4.3",
+      "title": "Private Header Parameter Names",
+      "char_start": 33338,
+      "char_end": 33735,
+      "sha256": "3e3c045036dfee434c4743da11b4e77088136be44234b2b0082458156aaeeeb3"
+    },
+    {
+      "rfc": "7516",
+      "section": "5",
+      "stable_id": "rfc7516-s5",
+      "title": "Producing and Consuming JWEs",
+      "char_start": 33735,
+      "char_end": 33769,
+      "sha256": "0ae96c73fea8b82497e2cca7252dd603ed56079044ae4a401b6e6f26b7f041df"
+    },
+    {
+      "rfc": "7516",
+      "section": "5.1",
+      "stable_id": "rfc7516-s5.1",
+      "title": "Message Encryption",
+      "char_start": 33769,
+      "char_end": 38393,
+      "sha256": "bd5fbe8ca1394abec949eac560819824ab75e0f274c21efe030c8695d088da6e"
+    },
+    {
+      "rfc": "7516",
+      "section": "5.2",
+      "stable_id": "rfc7516-s5.2",
+      "title": "Message Decryption",
+      "char_start": 38393,
+      "char_end": 46288,
+      "sha256": "216e7b617abbc1c933f7da6b28901822d7d4efc525c7c0ca524583cb3d2a08d3"
+    },
+    {
+      "rfc": "7516",
+      "section": "5.3",
+      "stable_id": "rfc7516-s5.3",
+      "title": "String Comparison Rules",
+      "char_start": 46288,
+      "char_end": 46432,
+      "sha256": "d70df5a3ae00f98e96d13394d2139cfbd720bbf0fc9cfae010cc5c355afa8486"
+    },
+    {
+      "rfc": "7516",
+      "section": "6",
+      "stable_id": "rfc7516-s6",
+      "title": "Key Identification",
+      "char_start": 46432,
+      "char_end": 46660,
+      "sha256": "3c98f0aeb1755f88657467294c69a4c8985545187462eaf0abaa610db8df2554"
+    },
+    {
+      "rfc": "7516",
+      "section": "7",
+      "stable_id": "rfc7516-s7",
+      "title": "Serializations",
+      "char_start": 46660,
+      "char_end": 47262,
+      "sha256": "77f8e5594def63d99b763b16a51c6ec73eb206fac2401cb11992a7a5dfc8f762"
+    },
+    {
+      "rfc": "7516",
+      "section": "7.1",
+      "stable_id": "rfc7516-s7.1",
+      "title": "JWE Compact Serialization",
+      "char_start": 47262,
+      "char_end": 47846,
+      "sha256": "372613b75cb9bdd6287db41b22733dad2fbc767537bdb61a990dbbff6474f072"
+    },
+    {
+      "rfc": "7516",
+      "section": "7.2",
+      "stable_id": "rfc7516-s7.2",
+      "title": "JWE JSON Serialization",
+      "char_start": 47846,
+      "char_end": 48432,
+      "sha256": "1a8b1258c6832b2b8d264a74181363c9a126df724bd9baa29d8cdcc948299894"
+    },
+    {
+      "rfc": "7516",
+      "section": "7.2.1",
+      "stable_id": "rfc7516-s7.2.1",
+      "title": "General JWE JSON Serialization Syntax",
+      "char_start": 48432,
+      "char_end": 54803,
+      "sha256": "9f33a214d14ae4bec2b66254ae27cc0db087a57e34470e36b48b5a06484815b6"
+    },
+    {
+      "rfc": "7516",
+      "section": "7.2.2",
+      "stable_id": "rfc7516-s7.2.2",
+      "title": "Flattened JWE JSON Serialization Syntax",
+      "char_start": 54803,
+      "char_end": 56494,
+      "sha256": "ab8281d03a55ad7a8de7754fa88ea35a4ae6c0089b0fdf906ea43b76cffb288f"
+    },
+    {
+      "rfc": "7516",
+      "section": "8",
+      "stable_id": "rfc7516-s8",
+      "title": "TLS Requirements",
+      "char_start": 56494,
+      "char_end": 56647,
+      "sha256": "f326c4bf47a20b91b96a8f9dee20a9736d4c887843a32a87c01a6ccf2bf1dbf8"
+    },
+    {
+      "rfc": "7516",
+      "section": "9",
+      "stable_id": "rfc7516-s9",
+      "title": "Distinguishing between JWS and JWE Objects",
+      "char_start": 56647,
+      "char_end": 58587,
+      "sha256": "89b9dd690cc721e965dea2f4b5cb20665dcc7e029db051ba331239837a6ea49d"
+    },
+    {
+      "rfc": "7516",
+      "section": "10",
+      "stable_id": "rfc7516-s10",
+      "title": "IANA Considerations",
+      "char_start": 58587,
+      "char_end": 58613,
+      "sha256": "150d5e78b3e400683c384720541f2284cfa317a58ef43e86467bfc7869833104"
+    },
+    {
+      "rfc": "7516",
+      "section": "10.1",
+      "stable_id": "rfc7516-s10.1",
+      "title": "JSON Web Signature and Encryption Header Parameters Registration",
+      "char_start": 58613,
+      "char_end": 58866,
+      "sha256": "e3f2796ba83f3eb793427a0be58590e8249ea51cbfb40596edb1b4ebb6eacccd"
+    },
+    {
+      "rfc": "7516",
+      "section": "10.1.1",
+      "stable_id": "rfc7516-s10.1.1",
+      "title": "Registry Contents",
+      "char_start": 58866,
+      "char_end": 62124,
+      "sha256": "4a12c5bc6e0f959cb5b7fde4f3da22249dba568217cfd9cc5135b43cc3bae900"
+    },
+    {
+      "rfc": "7516",
+      "section": "11",
+      "stable_id": "rfc7516-s11",
+      "title": "Security Considerations",
+      "char_start": 62124,
+      "char_end": 62681,
+      "sha256": "08fe3d93fb667bb4b5dea9ad1ff22ff924dcab1773f01994d2aea465d2bf234f"
+    },
+    {
+      "rfc": "7516",
+      "section": "11.1",
+      "stable_id": "rfc7516-s11.1",
+      "title": "Key Entropy and Random Values",
+      "char_start": 62681,
+      "char_end": 63013,
+      "sha256": "f51937ff14797147becf44b5221150c79481278047a1647254cf21a65dd49dcc"
+    },
+    {
+      "rfc": "7516",
+      "section": "11.2",
+      "stable_id": "rfc7516-s11.2",
+      "title": "Key Protection",
+      "char_start": 63013,
+      "char_end": 63680,
+      "sha256": "02472cfb0edbffab3ed45c16fac078ebdc3aab9583066972fdf6e2ae9c41817a"
+    },
+    {
+      "rfc": "7516",
+      "section": "11.3",
+      "stable_id": "rfc7516-s11.3",
+      "title": "Using Matching Algorithm Strengths",
+      "char_start": 63680,
+      "char_end": 64223,
+      "sha256": "1dab98c6955a77ef05f96cb0605c88989285fcdbed13c7cac9434afea3906c81"
+    },
+    {
+      "rfc": "7516",
+      "section": "11.4",
+      "stable_id": "rfc7516-s11.4",
+      "title": "Adaptive Chosen-Ciphertext Attacks",
+      "char_start": 64223,
+      "char_end": 65309,
+      "sha256": "397b5b79537b0ff8aa4283b241ec0cf97ead1b7352490f205d52fc15e74bcc77"
+    },
+    {
+      "rfc": "7516",
+      "section": "11.5",
+      "stable_id": "rfc7516-s11.5",
+      "title": "Timing Attacks",
+      "char_start": 65309,
+      "char_end": 65862,
+      "sha256": "70032c7b6c2e9939d77dc43dd18e6b88410d51359cfd72984d50b3c138f508c8"
+    },
+    {
+      "rfc": "7516",
+      "section": "12",
+      "stable_id": "rfc7516-s12",
+      "title": "References",
+      "char_start": 65862,
+      "char_end": 65879,
+      "sha256": "c091d04a6fe372b0c96ab37f6c724b533bfd6a1f0077305c02f65178012b8c8b"
+    },
+    {
+      "rfc": "7516",
+      "section": "12.1",
+      "stable_id": "rfc7516-s12.1",
+      "title": "Normative References",
+      "char_start": 65879,
+      "char_end": 68249,
+      "sha256": "990b490e8fba8c04f0c98b29e3199885faf49f98355a21f67bfb6e49df63df88"
+    },
+    {
+      "rfc": "7516",
+      "section": "12.2",
+      "stable_id": "rfc7516-s12.2",
+      "title": "Informative References",
+      "char_start": 68249,
+      "char_end": 108322,
+      "sha256": "0a5aadc47e65777051be6970c6ab76dbc3953dd40b4a4874604a88220fa3ee0b"
+    },
+    {
+      "rfc": "7519",
+      "section": "1",
+      "stable_id": "rfc7519-s1",
+      "title": "Introduction",
+      "char_start": 6657,
+      "char_end": 7386,
+      "sha256": "db25d7e4f0c3d3c7a97a49e84e95b73ff3560a6d9541aa09b78304467e0488e1"
+    },
+    {
+      "rfc": "7519",
+      "section": "1.1",
+      "stable_id": "rfc7519-s1.1",
+      "title": "Notational Conventions",
+      "char_start": 7386,
+      "char_end": 7796,
+      "sha256": "e8e82410311333531e35387f7046bfd767c6aa9e3e4c34cb2fd5100e80b80f34"
+    },
+    {
+      "rfc": "7519",
+      "section": "2",
+      "stable_id": "rfc7519-s2",
+      "title": "Terminology",
+      "char_start": 7796,
+      "char_end": 11225,
+      "sha256": "fdb44d736350c275d96af1392d0b85c7a26044716fa0444dd44ba878313c4517"
+    },
+    {
+      "rfc": "7519",
+      "section": "3",
+      "stable_id": "rfc7519-s3",
+      "title": "JSON Web Token (JWT) Overview",
+      "char_start": 11225,
+      "char_end": 13040,
+      "sha256": "85b0b41e7611c9be975cde12a1d951d499c1343692e99718f1747ca2dc32423a"
+    },
+    {
+      "rfc": "7519",
+      "section": "3.1",
+      "stable_id": "rfc7519-s3.1",
+      "title": "Example JWT",
+      "char_start": 13040,
+      "char_end": 16241,
+      "sha256": "c053adab080063dff8d4a0f4ec1d66807ebca5deb8ccb26c71e3e0d39d7e0f6e"
+    },
+    {
+      "rfc": "7519",
+      "section": "4",
+      "stable_id": "rfc7519-s4",
+      "title": "JWT Claims",
+      "char_start": 16241,
+      "char_end": 17317,
+      "sha256": "27bafcef75343cd0b0036f57742270d011ef5d196a5138678c5c0cd0a1c30326"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1",
+      "stable_id": "rfc7519-s4.1",
+      "title": "Registered Claim Names",
+      "char_start": 17317,
+      "char_end": 17872,
+      "sha256": "887aafe044e9fde67162aee8b53ed07889e1e03c37f24e8efd36e3d6e1d44efb"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.1",
+      "stable_id": "rfc7519-s4.1.1",
+      "title": "\"iss\" (Issuer) Claim",
+      "char_start": 17872,
+      "char_end": 18158,
+      "sha256": "1341412bb9f92cd3f8b6d435d19f79d0670be374e324afa853afe5457d4f1d15"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.2",
+      "stable_id": "rfc7519-s4.1.2",
+      "title": "\"sub\" (Subject) Claim",
+      "char_start": 18158,
+      "char_end": 18644,
+      "sha256": "8cf2fc4c094f18e7ae5c068b390cf58ebc9dd4b51fa251e44c82af537960fe2d"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.3",
+      "stable_id": "rfc7519-s4.1.3",
+      "title": "\"aud\" (Audience) Claim",
+      "char_start": 18644,
+      "char_end": 19407,
+      "sha256": "35344f8f5bf67f816fab92ebe8889980573115290beecf10930ca823c054185f"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.4",
+      "stable_id": "rfc7519-s4.1.4",
+      "title": "\"exp\" (Expiration Time) Claim",
+      "char_start": 19407,
+      "char_end": 20090,
+      "sha256": "9730bf96173b6ac205afd5db16e25723778243ce60842a38fc822cc71ccfd6c8"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.5",
+      "stable_id": "rfc7519-s4.1.5",
+      "title": "\"nbf\" (Not Before) Claim",
+      "char_start": 20090,
+      "char_end": 20606,
+      "sha256": "1ab34fd81b145451804c0acac19a161a4a822d39e35a23b61bc9acdf22459edf"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.6",
+      "stable_id": "rfc7519-s4.1.6",
+      "title": "\"iat\" (Issued At) Claim",
+      "char_start": 20606,
+      "char_end": 20878,
+      "sha256": "e03d144c91754b3c85b09fbe7c1a67238708ee860fc998e3159850056ae6ece2"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.1.7",
+      "stable_id": "rfc7519-s4.1.7",
+      "title": "\"jti\" (JWT ID) Claim",
+      "char_start": 20878,
+      "char_end": 21450,
+      "sha256": "24368871f2021448a64c39fa81d69e87279c90cb1f654a48b08540fa653187e3"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.2",
+      "stable_id": "rfc7519-s4.2",
+      "title": "Public Claim Names",
+      "char_start": 21450,
+      "char_end": 21972,
+      "sha256": "daf5a98ef3611efa73a86c46ee0bfef48975d0ac3392a3856c51c9d6c92c5f31"
+    },
+    {
+      "rfc": "7519",
+      "section": "4.3",
+      "stable_id": "rfc7519-s4.3",
+      "title": "Private Claim Names",
+      "char_start": 21972,
+      "char_end": 22453,
+      "sha256": "a56689d7f53eadb713bd7ca87435715a4c7207bdfd75d3b7e145af385be8cdd4"
+    },
+    {
+      "rfc": "7519",
+      "section": "5",
+      "stable_id": "rfc7519-s5",
+      "title": "JOSE Header",
+      "char_start": 22453,
+      "char_end": 22934,
+      "sha256": "bd21bd84722de7e75286a2b86745d048a0ad8de958f2947dc1daa66df7d91e12"
+    },
+    {
+      "rfc": "7519",
+      "section": "5.1",
+      "stable_id": "rfc7519-s5.1",
+      "title": "\"typ\" (Type) Header Parameter",
+      "char_start": 22934,
+      "char_end": 23970,
+      "sha256": "2ad4c85381d80f0cae13d15bde7f046aef6304ba29aff623f71afcee387ad243"
+    },
+    {
+      "rfc": "7519",
+      "section": "5.2",
+      "stable_id": "rfc7519-s5.2",
+      "title": "\"cty\" (Content Type) Header Parameter",
+      "char_start": 23970,
+      "char_end": 24903,
+      "sha256": "5f128cc7e944e9ae95960b0f74f085e4498c4acdf4c3e2821f1e397fdb70cf47"
+    },
+    {
+      "rfc": "7519",
+      "section": "5.3",
+      "stable_id": "rfc7519-s5.3",
+      "title": "Replicating Claims as Header Parameters",
+      "char_start": 24903,
+      "char_end": 26168,
+      "sha256": "1543057c5b080a48a6ae3bb3acd4d52c72075a4d1db77d33f758160cca604a7c"
+    },
+    {
+      "rfc": "7519",
+      "section": "6",
+      "stable_id": "rfc7519-s6",
+      "title": "Unsecured JWTs",
+      "char_start": 26168,
+      "char_end": 26707,
+      "sha256": "e3c978db9d4298824e24eadbf9c4bd34acb7d30320c15cbd89633cf1abf69bb8"
+    },
+    {
+      "rfc": "7519",
+      "section": "6.1",
+      "stable_id": "rfc7519-s6.1",
+      "title": "Example Unsecured JWT",
+      "char_start": 26707,
+      "char_end": 27941,
+      "sha256": "8884c7e2de2e52701aee61951630191e1b4edaf8a90199e38be0a4cdc49c8dc3"
+    },
+    {
+      "rfc": "7519",
+      "section": "7",
+      "stable_id": "rfc7519-s7",
+      "title": "Creating and Validating JWTs",
+      "char_start": 27941,
+      "char_end": 27975,
+      "sha256": "82dd1a82a1dcddfd750f23b0d9423428d08cf6a12174e3337d76c1bab4d8f24f"
+    },
+    {
+      "rfc": "7519",
+      "section": "7.1",
+      "stable_id": "rfc7519-s7.1",
+      "title": "Creating a JWT",
+      "char_start": 27975,
+      "char_end": 29674,
+      "sha256": "e7469d43c90e1ecd870ccce1f27e65d13d7868a0a8063c65af98265637dd0636"
+    },
+    {
+      "rfc": "7519",
+      "section": "7.2",
+      "stable_id": "rfc7519-s7.2",
+      "title": "Validating a JWT",
+      "char_start": 29674,
+      "char_end": 32427,
+      "sha256": "29e8b673669a3018358dead3986b670a096b09cdf2c1a5f78823cc3d718127cf"
+    },
+    {
+      "rfc": "7519",
+      "section": "7.3",
+      "stable_id": "rfc7519-s7.3",
+      "title": "String Comparison Rules",
+      "char_start": 32427,
+      "char_end": 34228,
+      "sha256": "f62a93d87c5196b1f9f2c64354b94f867d1d5715e593afb58dde0a394ac656ed"
+    },
+    {
+      "rfc": "7519",
+      "section": "8",
+      "stable_id": "rfc7519-s8",
+      "title": "Implementation Requirements",
+      "char_start": 34228,
+      "char_end": 36233,
+      "sha256": "ccd36be41133c921527cb16642f8a41048f5dbf0f7dcb317b9336cc7780c6b17"
+    },
+    {
+      "rfc": "7519",
+      "section": "9",
+      "stable_id": "rfc7519-s9",
+      "title": "URI for Declaring that Content is a JWT",
+      "char_start": 36233,
+      "char_end": 36521,
+      "sha256": "71675088e194602b2dfc77b05814666bdd396704f41fd838670388cf0c9780d6"
+    },
+    {
+      "rfc": "7519",
+      "section": "10",
+      "stable_id": "rfc7519-s10",
+      "title": "IANA Considerations",
+      "char_start": 36521,
+      "char_end": 36547,
+      "sha256": "150d5e78b3e400683c384720541f2284cfa317a58ef43e86467bfc7869833104"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.1",
+      "stable_id": "rfc7519-s10.1",
+      "title": "JSON Web Token Claims Registry",
+      "char_start": 36547,
+      "char_end": 38910,
+      "sha256": "2cfe51f1984d85a860c8a8c837ac552c561ab41754439fbd775a732358551dd5"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.1.1",
+      "stable_id": "rfc7519-s10.1.1",
+      "title": "Registration Template",
+      "char_start": 38910,
+      "char_end": 40032,
+      "sha256": "87fa81eb21d562fd2fbb79f5c03fa368ff519e247688a406f6830b839a788f37"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.1.2",
+      "stable_id": "rfc7519-s10.1.2",
+      "title": "Initial Registry Contents",
+      "char_start": 40032,
+      "char_end": 41264,
+      "sha256": "3e929bdf10ac3cc1cf07c33d54ca7ec0d262a03783c012b22c288ed39c5d3d42"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.2",
+      "stable_id": "rfc7519-s10.2",
+      "title": "Sub-Namespace Registration of",
+      "char_start": 41264,
+      "char_end": 41346,
+      "sha256": "771df1fef554e53835ffd32365c7eb53258822a14ec37cb0ab30c8f849190a39"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.2.1",
+      "stable_id": "rfc7519-s10.2.1",
+      "title": "Registry Contents",
+      "char_start": 41346,
+      "char_end": 41927,
+      "sha256": "2e2c931fb5493dce478d1552a06ececc2e68c4e1844760f23fc9f02a1714414a"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.3",
+      "stable_id": "rfc7519-s10.3",
+      "title": "Media Type Registration",
+      "char_start": 41927,
+      "char_end": 41959,
+      "sha256": "04292a711f2034895dce52c424f10d9ec42174a2626b2efb8415a84c6f9b7fb8"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.3.1",
+      "stable_id": "rfc7519-s10.3.1",
+      "title": "Registry Contents",
+      "char_start": 41959,
+      "char_end": 43339,
+      "sha256": "7d0fb6306d8c610c33cd16fdc4b905b5a409a6c1e4ae65ed011ae4a435b228df"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.4",
+      "stable_id": "rfc7519-s10.4",
+      "title": "Header Parameter Names Registration",
+      "char_start": 43339,
+      "char_end": 43791,
+      "sha256": "f06ce4bc77cca910246ef05043ac6078b9afd9ff0f741d55c1687f43edb95515"
+    },
+    {
+      "rfc": "7519",
+      "section": "10.4.1",
+      "stable_id": "rfc7519-s10.4.1",
+      "title": "Registry Contents",
+      "char_start": 43791,
+      "char_end": 44464,
+      "sha256": "ac517250e5b5cbd2e3608a8ba9dce77b353799b951fb7ef5a54b876f76588e2c"
+    },
+    {
+      "rfc": "7519",
+      "section": "11",
+      "stable_id": "rfc7519-s11",
+      "title": "Security Considerations",
+      "char_start": 44464,
+      "char_end": 45152,
+      "sha256": "dcffe474862fa947d337dddb88661e93fdc9f0d87b299ad98895aeef5b4988a9"
+    },
+    {
+      "rfc": "7519",
+      "section": "11.1",
+      "stable_id": "rfc7519-s11.1",
+      "title": "Trust Decisions",
+      "char_start": 45152,
+      "char_end": 45542,
+      "sha256": "c0d6fb502acfcef07066849c16079e430dc42956c5fd03f3f436f05938f56862"
+    },
+    {
+      "rfc": "7519",
+      "section": "11.2",
+      "stable_id": "rfc7519-s11.2",
+      "title": "Signing and Encryption Order",
+      "char_start": 45542,
+      "char_end": 46667,
+      "sha256": "4d4dc9f5acd3d651cd638b5a28dc041cab795471a5590e69ba9d956ded712f1d"
+    },
+    {
+      "rfc": "7519",
+      "section": "12",
+      "stable_id": "rfc7519-s12",
+      "title": "Privacy Considerations",
+      "char_start": 46667,
+      "char_end": 47295,
+      "sha256": "d1c5c587d2237dc39053d6b800a81fcb11e1a82922faa6e19ade330be8b7b5e5"
+    },
+    {
+      "rfc": "7519",
+      "section": "13",
+      "stable_id": "rfc7519-s13",
+      "title": "References",
+      "char_start": 47295,
+      "char_end": 47312,
+      "sha256": "3a1fd82ad4e6c9eb7f61fb3d367825c8755794a2f0d1bef03525c85353f39987"
+    },
+    {
+      "rfc": "7519",
+      "section": "13.1",
+      "stable_id": "rfc7519-s13.1",
+      "title": "Normative References",
+      "char_start": 47312,
+      "char_end": 49823,
+      "sha256": "63c7fda521b7683b4b19973b9ddf318c1e16c8018ada937b28cf3fd77f561863"
+    },
+    {
+      "rfc": "7519",
+      "section": "13.2",
+      "stable_id": "rfc7519-s13.2",
+      "title": "Informative References",
+      "char_start": 49823,
+      "char_end": 63039,
+      "sha256": "522f65090378a409553310614b7c266c9a6137680bc6f86ae5028d8e28fd32ef"
+    },
+    {
+      "rfc": "8725",
+      "section": "1",
+      "stable_id": "rfc8725-s1",
+      "title": "Introduction",
+      "char_start": 3671,
+      "char_end": 5978,
+      "sha256": "5e7e3872253f1406d297a4db177ed14899425db66da7470fcf467f5a3bafa7ea"
+    },
+    {
+      "rfc": "8725",
+      "section": "1.1",
+      "stable_id": "rfc8725-s1.1",
+      "title": "Target Audience",
+      "char_start": 5978,
+      "char_end": 6404,
+      "sha256": "944194768b4fd36a70eb6096dfe70bd2786c8ee3be2fba725a2d4a77d2c42a71"
+    },
+    {
+      "rfc": "8725",
+      "section": "1.2",
+      "stable_id": "rfc8725-s1.2",
+      "title": "Conventions Used in this Document",
+      "char_start": 6404,
+      "char_end": 6756,
+      "sha256": "269c73faf0e739ead8eac1312072cf233032119543e0402fe4b296539b61c89b"
+    },
+    {
+      "rfc": "8725",
+      "section": "2",
+      "stable_id": "rfc8725-s2",
+      "title": "Threats and Vulnerabilities",
+      "char_start": 6756,
+      "char_end": 6991,
+      "sha256": "df1e289830c879869a66eaf356c18b4c3f07b7c1029606dd051b2b0dd2bc50c0"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.1",
+      "stable_id": "rfc8725-s2.1",
+      "title": "Weak Signatures and Insufficient Signature Validation",
+      "char_start": 6991,
+      "char_end": 7822,
+      "sha256": "96a35d6d2a98f85a24652fde1072daa7289c39a30de8c2d34b7132242c21d3a7"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.2",
+      "stable_id": "rfc8725-s2.2",
+      "title": "Weak Symmetric Keys",
+      "char_start": 7822,
+      "char_end": 8251,
+      "sha256": "47051967a4ef1131af463e20fe28a1695e559348f6709f5d93281a121b40d6b5"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.3",
+      "stable_id": "rfc8725-s2.3",
+      "title": "Incorrect Composition of Encryption and Signature",
+      "char_start": 8251,
+      "char_end": 8479,
+      "sha256": "a08c5028860ab912b1ec3bd1e93d1502a88cc1c3a043e03f183cc2dbc61db3d0"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.4",
+      "stable_id": "rfc8725-s2.4",
+      "title": "Plaintext Leakage through Analysis of Ciphertext Length",
+      "char_start": 8479,
+      "char_end": 9317,
+      "sha256": "67511dd9e6e8eb441e5a44af26b544c0dfa641c5ea363169d5d8c9a5fc23657e"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.5",
+      "stable_id": "rfc8725-s2.5",
+      "title": "Insecure Use of Elliptic Curve Encryption",
+      "char_start": 9317,
+      "char_end": 9859,
+      "sha256": "dbeae948e5dd8f771828d8241a8641f67fdf72bc2338aac1cdd1c7040bccffc2"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.6",
+      "stable_id": "rfc8725-s2.6",
+      "title": "Multiplicity of JSON Encodings",
+      "char_start": 9859,
+      "char_end": 10530,
+      "sha256": "4d8ba87cc06f5ebbb211af8d5dad586e30a55afded8a28bcfef9e1a1f31d44af"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.7",
+      "stable_id": "rfc8725-s2.7",
+      "title": "Substitution Attacks",
+      "char_start": 10530,
+      "char_end": 11257,
+      "sha256": "70d6900ff9a0f00c2739395bbb962a508d3d99dd72040b522dc4bd4e4b816c02"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.8",
+      "stable_id": "rfc8725-s2.8",
+      "title": "Cross-JWT Confusion",
+      "char_start": 11257,
+      "char_end": 11828,
+      "sha256": "639d94b4b0ded54c51608347c3a746f8d689a522facad74ba8ea2b3f7829819d"
+    },
+    {
+      "rfc": "8725",
+      "section": "2.9",
+      "stable_id": "rfc8725-s2.9",
+      "title": "Indirect Attacks on the Server",
+      "char_start": 11828,
+      "char_end": 12268,
+      "sha256": "0df868558d7c9c2c7f3250d09e7e5edffd2a8f783bd3199fe081d73d54db048d"
+    },
+    {
+      "rfc": "8725",
+      "section": "3",
+      "stable_id": "rfc8725-s3",
+      "title": "Best Practices",
+      "char_start": 12268,
+      "char_end": 12419,
+      "sha256": "1ec28fd089331a90b2f3fcac02f835a93f628af04cf8dfd4507f78f0b8b8f66b"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.1",
+      "stable_id": "rfc8725-s3.1",
+      "title": "Perform Algorithm Verification",
+      "char_start": 12419,
+      "char_end": 12897,
+      "sha256": "852f1aa28e999d5f8159e748f3ada1ad7f617c9926be63e429a71f42753af2cb"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.2",
+      "stable_id": "rfc8725-s3.2",
+      "title": "Use Appropriate Algorithms",
+      "char_start": 12897,
+      "char_end": 15371,
+      "sha256": "006e8725305ca4138570d278b59cdba54e9925d455df464ac986389ba5a67534"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.3",
+      "stable_id": "rfc8725-s3.3",
+      "title": "Validate All Cryptographic Operations",
+      "char_start": 15371,
+      "char_end": 15779,
+      "sha256": "b25b0503aad14cbac75848ed5b7178b6317bf97593b511b80130f7ba4e41e6fc"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.4",
+      "stable_id": "rfc8725-s3.4",
+      "title": "Validate Cryptographic Inputs",
+      "char_start": 15779,
+      "char_end": 16821,
+      "sha256": "44e1df4edfd732e35c2245ba91ad074601ae6d29bd5f8d4ae50c4fc5b4a53f5a"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.5",
+      "stable_id": "rfc8725-s3.5",
+      "title": "Ensure Cryptographic Keys Have Sufficient Entropy",
+      "char_start": 16821,
+      "char_end": 17429,
+      "sha256": "48ed77284ffa4ffdde7aa1342ca7ef6d481bf260ebd292ea9ef9c0b68a3e134b"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.6",
+      "stable_id": "rfc8725-s3.6",
+      "title": "Avoid Compression of Encryption Inputs",
+      "char_start": 17429,
+      "char_end": 17616,
+      "sha256": "cfffa3278783712d870a3c271daf8bd738dfd839fc84a23b7990daad2ac7373e"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.7",
+      "stable_id": "rfc8725-s3.7",
+      "title": "Use UTF-8",
+      "char_start": 17616,
+      "char_end": 17985,
+      "sha256": "cfa4fcaaa7a9e7a0ceffb81adf8ea2bad5c6f28dd6e4358423f4b77241e96e00"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.8",
+      "stable_id": "rfc8725-s3.8",
+      "title": "Validate Issuer and Subject",
+      "char_start": 17985,
+      "char_end": 19087,
+      "sha256": "3f706279e85077b6fd3eefb5561faffde01c154a644ba8b712bbafe3dc748504"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.9",
+      "stable_id": "rfc8725-s3.9",
+      "title": "Use and Validate Audience",
+      "char_start": 19087,
+      "char_end": 19624,
+      "sha256": "843b58e231eeabd759f170b7fc8b4d01f024fb6145f10d33fe51aefdc739c150"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.10",
+      "stable_id": "rfc8725-s3.10",
+      "title": "Do Not Trust Received Claims",
+      "char_start": 19624,
+      "char_end": 20263,
+      "sha256": "da2bbfefc1e22f5551e5153421e83378fc35a8a30e4531605c3eba2bf456270a"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.11",
+      "stable_id": "rfc8725-s3.11",
+      "title": "Use Explicit Typing",
+      "char_start": 20263,
+      "char_end": 21918,
+      "sha256": "ff2f649fc47a7089c4ed10526e3a309bb4009deda1eb27d5cd7c3e91c220bd68"
+    },
+    {
+      "rfc": "8725",
+      "section": "3.12",
+      "stable_id": "rfc8725-s3.12",
+      "title": "Use Mutually Exclusive Validation Rules for Different Kinds of",
+      "char_start": 21918,
+      "char_end": 23917,
+      "sha256": "a304f3803a3afdc32f5c0e63a6e10c47fdebbba46ea63f14677536ad4eab6a87"
+    },
+    {
+      "rfc": "8725",
+      "section": "4",
+      "stable_id": "rfc8725-s4",
+      "title": "Security Considerations",
+      "char_start": 23917,
+      "char_end": 24056,
+      "sha256": "6706c495ef43855d25213647f4fae05584580e8be0eadadadea3b77f8ac632b6"
+    },
+    {
+      "rfc": "8725",
+      "section": "5",
+      "stable_id": "rfc8725-s5",
+      "title": "IANA Considerations",
+      "char_start": 24056,
+      "char_end": 24120,
+      "sha256": "43982dc3a66992ee95659d1b01d4bee7b7e331e0d7cd166a78e58eba24e62c89"
+    },
+    {
+      "rfc": "8725",
+      "section": "6",
+      "stable_id": "rfc8725-s6",
+      "title": "References",
+      "char_start": 24120,
+      "char_end": 24136,
+      "sha256": "59913eadcb20b98287c13e3393f16e9e939e2d839f9b59803df08aa171599d78"
+    },
+    {
+      "rfc": "8725",
+      "section": "6.1",
+      "stable_id": "rfc8725-s6.1",
+      "title": "Normative References",
+      "char_start": 24136,
+      "char_end": 26782,
+      "sha256": "776041f68ed44b5156fb47ac49f4022373c249aa00ae96e44fc695ab1cb57a49"
+    },
+    {
+      "rfc": "8725",
+      "section": "6.2",
+      "stable_id": "rfc8725-s6.2",
+      "title": "Informative References",
+      "char_start": 26782,
+      "char_end": 30789,
+      "sha256": "8a5b5244c60f5d59a30535b486b367f69d19a208f76208f4409c07db0aeedefd"
+    }
+  ]
+}

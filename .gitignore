@@ -1,0 +1,53 @@
+# Strict ignore rules: keep this public repo clean and secret-free.
+# Dependencies / runtime
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Secrets and credentials (never commit)
+.env
+.env.*
+*.env
+*.pem
+*.key
+credentials*.json
+*credential*
+*secret*
+secrets/
+private/
+*.token
+
+# Local scratch / background output (never commit)
+scratch/
+tmp/
+*.log.local
+tool-output/
+.opencode/
+
+# Parent-project material that must never enter this repo
+# (chat exports, collaboration notes, runbooks, planning files,
+# Karpathy source copies, background content)
+*chat*export*
+*runbook*
+*collaboration*
+karpathy*
+llm-wiki-decomposition.md
+references/
+
+# Build outputs (derived index is tracked; everything else is not)
+*.tmp
+*.bak
