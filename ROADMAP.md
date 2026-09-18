@@ -179,7 +179,7 @@ must work with no key, using the committed cached responses.
 | --- | --- |
 | Audited Wiki (repo root) | done |
 | Repair cycle (section-scoped checks, c021, LICENSE, analysis) | done |
-| 1. Calibrated citation audit | next |
+| 1. Calibrated citation audit | project 1: harness built, live run pending review |
 | 2. Evidence expansion | planned |
 | 3. RAG/index gate or reranker evaluation | planned |
 | 4. State-size sensitivity | planned |
