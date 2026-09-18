@@ -30,6 +30,11 @@ scope. Start here before opening individual pages.
 - [JWT security practices](concepts/jwt-security-practices.md) —
   allow-lists, `none`, key hygiene, audience and issuer checks.
 
+## Analyses
+
+- [Impressed but skeptical](analyses/impressed-but-skeptical.md) — a
+  repair note on section-scoped quote checks.
+
 ## Operations
 
 - `log.md` records ingests and maintenance in chronological order.

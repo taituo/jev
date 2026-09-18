@@ -132,16 +132,34 @@ class TestClaims(unittest.TestCase):
             if c["label"] == "real_standards_conflict":
                 self.assertIn((c["rfc2"], c["section2"]), secs, f"{c['id']} secondary missing")
 
-    def test_supported_quotes_present_fabricated_absent(self):
+    def test_quotes_section_scoped(self):
         raws = {n: (SOURCES_DIR / f"rfc{n}.txt").read_text(encoding="utf-8", errors="replace") for n in RFCs}
+        sec_index = {(s["rfc"], s["section"]): s for s in load_sections()}
+
+        def section_text(rfc, section):
+            s = sec_index[(rfc, section)]
+            return raws[rfc][s["char_start"] : s["char_end"]]
+
         for c in load_claims():
             q = c.get("quote", "")
-            if c["label"] == "supported":
-                self.assertTrue(q and q in raws[c["rfc"]], f"{c['id']} quote must occur verbatim")
-            elif c["label"] == "fabricated_quote":
-                self.assertTrue(q)
+            label = c["label"]
+            self.assertTrue(q, f"{c['id']} quote must be non-empty")
+            primary = section_text(c["rfc"], c["section"])
+            if label in ("supported", "contradicted"):
+                self.assertIn(q, primary, f"{c['id']} quote must occur in cited section rfc{c['rfc']} s{c['section']}")
+            elif label == "real_standards_conflict":
+                secondary = section_text(c["rfc2"], c["section2"])
+                self.assertTrue(
+                    q in primary or q in secondary,
+                    f"{c['id']} quote must occur in at least one cited section",
+                )
+            elif label == "wrong_section":
+                self.assertIn(q, raws[c["rfc"]], f"{c['id']} quote must occur somewhere in rfc{c['rfc']}")
+                self.assertNotIn(q, primary, f"{c['id']} quote must NOT occur in cited section")
+            elif label in ("fabricated_quote", "unsupported"):
+                self.assertNotIn(q, primary, f"{c['id']} quote must be absent from cited section")
                 for n, t in raws.items():
-                    self.assertNotIn(q, t, f"{c['id']} fabricated quote must be absent from rfc{n}")
+                    self.assertNotIn(q, t, f"{c['id']} quote must be absent from rfc{n}")
 
 
 class TestWiki(unittest.TestCase):

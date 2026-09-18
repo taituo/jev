@@ -67,3 +67,5 @@ python3 -m unittest discover -s tests -v
 
 RFC texts belong to the IETF Trust and authors; see `NOTICE-IETF.md`.
 Wiki prose and code are original for audit research.
+
+The MIT license in `LICENSE` covers original code and wiki prose only; the RFC texts in `raw/sources/` are not covered by MIT and remain under IETF Trust terms.

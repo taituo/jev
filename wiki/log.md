@@ -16,3 +16,9 @@ event, newest at the bottom. Never rewrite history.
 - Verified every RFC citation resolves to derived/sections.json.
 - Verified claims fixture counts and label balance.
 - Verified checksums and section index reproducibility.
+
+## [2026-09-18] repair | section-scoped quote checks and c021
+
+- Tightened quote tests to char_start/char_end section slices.
+- Corrected c021 citation from RFC 6749 section 1.4 to section 1.
+- Added fixtures/FROZEN.md, LICENSE, and analyses/impressed-but-skeptical.md.

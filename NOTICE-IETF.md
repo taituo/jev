@@ -23,3 +23,5 @@ All wiki pages under `wiki/` are original summaries and syntheses.
 Every factual claim there cites an RFC section (for example,
 `RFC 7519 §4.1.4`) that can be mechanically resolved against
 `derived/sections.json`.
+
+The RFC texts in `raw/sources/` are not covered by the repository MIT license and remain under IETF Trust terms.
