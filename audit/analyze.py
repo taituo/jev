@@ -112,21 +112,18 @@ def triage_curve(records: list[dict],
         return {"target": target, "threshold": None,
                 "statement": "no records; no threshold evaluated"}
     thresholds = sorted({r["confidence"] for r in records} | {0.0})
-    best = None
     for thr in thresholds:
         accepted = [r for r in records if r["confidence"] >= thr]
         if not accepted:
             continue
         prec = sum(1 for r in accepted if r["correct"]) / len(accepted)
         if prec >= target:
-            best = {"threshold": thr, "precision": prec,
+            return {"target": target, "threshold": thr, "precision": prec,
                     "coverage": len(accepted) / len(records),
                     "accepted": len(accepted), "total": len(records)}
-    if best is None:
-        return {"target": target, "threshold": None,
-                "statement": f"no confidence threshold reaches "
-                             f">={target:.0%} precision"}
-    return {"target": target, **best}
+    return {"target": target, "threshold": None,
+            "statement": f"no confidence threshold reaches "
+                         f">={target:.0%} precision"}
 
 
 def noul_sweep(records: list[dict], key: str,

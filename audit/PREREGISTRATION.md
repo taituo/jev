@@ -23,12 +23,22 @@ Ambiguity note, pre-stated: `fabricated_quote` is ambiguous in principle —
 a model that detects an invented quote could arguably answer `contradicts`
 (the claim asserts something false) rather than `says_nothing` (the section
 does not address it). We pre-register `says_nothing` as the expected verdict
-because the cited section contains no statement on the claim either way, and
-we pre-state the accepted set: for `fabricated_quote`, `wrong_section` and
-`unsupported`, the accepted (unflagged-against) set is exactly
-{`says_nothing`}; any other Q1 verdict counts as a flag for threshold (b)
-and as incorrect for accuracy. For `contradicted` the accepted set is
-exactly {`contradicts`}; for `supported` exactly {`supports`}.
+because the cited section contains no statement on the claim either way.
+Correctness (this section only): for `fabricated_quote`, `wrong_section`
+and `unsupported`, the correct set is exactly {`says_nothing`}; any other
+Q1 verdict is incorrect for accuracy. For `contradicted` the correct set
+is exactly {`contradicts`}; for `supported` exactly {`supports`}.
+
+Detection is defined only in §(b): `flagged = (Q1 verdict != supports)`.
+Correctness and detection are distinct. An unsupported claim answered
+`supports` is incorrect and undetected; answered `says_nothing` is correct
+and detected; answered `contradicts` is incorrect but detected. A supported
+claim answered anything but `supports` is incorrect and flagged (a false
+flag).
+
+Clarification note (pre-live repair): this separation resolves the
+pre-live contradiction between §(a) flag language and §(b) without
+changing scoring or thresholds.
 
 The 4 `real_standards_conflict` fixtures have no expected verdict and no
 threshold: each such claim asserts a cross-RFC (7519 vs 8725) conflict and

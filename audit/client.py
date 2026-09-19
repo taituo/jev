@@ -51,6 +51,15 @@ FORBIDDEN_CACHE_KEYS = {
     "secret", "credentials", "credential", "auth", "cookie", "set-cookie",
 }
 
+# Credential-bearing string fragments that must never appear in any cached
+# string (keys or values, nested). Checked case-insensitively.
+FORBIDDEN_VALUE_SUBSTRINGS = ("authorization", "bearer")
+
+
+def _string_carries_auth_text(value: str) -> bool:
+    lowered = value.lower()
+    return any(token in lowered for token in FORBIDDEN_VALUE_SUBSTRINGS)
+
 
 class LiveRefusedError(RuntimeError):
     """Raised when --live is requested without TYPESAFE_API_KEY set."""
@@ -65,21 +74,45 @@ def utcnow_iso() -> str:
             .isoformat(timespec="seconds").replace("+00:00", "Z"))
 
 
-def check_no_auth_material(obj: object) -> None:
-    """Fail if any mapping key looks like headers/auth material."""
+def check_no_auth_material(obj: object,
+                         credential: str | None = None) -> None:
+    """Fail if any key or string value carries auth/credential material.
+
+    Checks mapping keys (exact forbidden match) as well as every nested
+    string key and value for authorization/bearer text and for the supplied
+    live credential substring. Error messages are generic on purpose: they
+    never echo the rejected contents or the credential.
+    """
     if isinstance(obj, dict):
         for key, value in obj.items():
-            if str(key).lower() in FORBIDDEN_CACHE_KEYS:
-                raise ValueError(f"cache must not store {key!r}")
-            check_no_auth_material(value)
+            key_text = str(key)
+            if key_text.lower() in FORBIDDEN_CACHE_KEYS:
+                raise ValueError("cache must not store auth material")
+            if _string_carries_auth_text(key_text):
+                raise ValueError("cache must not store auth material")
+            if credential and credential in key_text:
+                raise ValueError("cache must not store auth material")
+            if isinstance(value, str):
+                if _string_carries_auth_text(value):
+                    raise ValueError("cache must not store auth material")
+                if credential and credential in value:
+                    raise ValueError("cache must not store auth material")
+            else:
+                check_no_auth_material(value, credential=credential)
     elif isinstance(obj, list):
         for item in obj:
-            check_no_auth_material(item)
+            check_no_auth_material(item, credential=credential)
+    elif isinstance(obj, str):
+        if _string_carries_auth_text(obj):
+            raise ValueError("cache must not store auth material")
+        if credential and credential in obj:
+            raise ValueError("cache must not store auth material")
 
 
 def save_cache(fixture_id: str, request_hash: str, model_requested: str,
-               response_body: dict, created_at: str | None = None) -> Path:
-    check_no_auth_material(response_body)
+               response_body: dict, created_at: str | None = None,
+               credential: str | None = None) -> Path:
+    check_no_auth_material(response_body, credential=credential)
     doc = {
         "fixture_id": fixture_id,
         "request_hash": request_hash,
@@ -111,7 +144,7 @@ def current_request(fixture: dict, index=None, raw_cache=None) -> tuple[dict, st
 
 
 def verify_cache(fixture: dict, cached: dict, index=None,
-                 raw_cache=None) -> dict:
+                 raw_cache=None, credential: str | None = None) -> dict:
     """Replay one cached response; fail loudly on request-hash drift."""
     _, digest = current_request(fixture, index, raw_cache)
     if cached.get("request_hash") != digest:
@@ -121,7 +154,7 @@ def verify_cache(fixture: dict, cached: dict, index=None,
             f"(state+questions changed; do not trust this replay)")
     if cached.get("fixture_id") != fixture["id"]:
         raise ValueError(f"cache id mismatch: {cached.get('fixture_id')}")
-    check_no_auth_material(cached)
+    check_no_auth_material(cached, credential=credential)
     return cached
 
 
@@ -173,7 +206,12 @@ def _read_api_key() -> str:
 
 def live_evaluate(payload: dict, api_key: str,
                   endpoint: str = Q.ENDPOINT, timeout: float = 120.0) -> dict:
-    """POST one payload with stdlib urllib. Never logs the key/headers."""
+    """POST one payload with stdlib urllib. Never logs the key/headers.
+
+    Error diagnostics report only the HTTP status and request context, never
+    the response body, key, or headers. Chained exceptions are suppressed so
+    transport internals cannot expose unsafe content.
+    """
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
         endpoint, data=body, method="POST",
@@ -184,9 +222,11 @@ def live_evaluate(payload: dict, api_key: str,
         with urllib.request.urlopen(request, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
-        detail = exc.read().decode("utf-8", errors="replace")[:500]
         raise RuntimeError(
-            f"live request failed: HTTP {exc.code} ({detail})") from exc
+            f"live request failed: HTTP {exc.code} from {endpoint}") from None
+    except urllib.error.URLError:
+        raise RuntimeError(
+            f"live request failed: transport error from {endpoint}") from None
 
 
 def live_all(fixtures: list[dict], api_key: str | None = None,
@@ -199,6 +239,7 @@ def live_all(fixtures: list[dict], api_key: str | None = None,
     for fixture in fixtures[:limit] if limit else fixtures:
         payload, digest = current_request(fixture, index, raw_cache)
         body = live_evaluate(payload, key)
-        check_no_auth_material(body)
-        paths.append(save_cache(fixture["id"], digest, payload["model"], body))
+        check_no_auth_material(body, credential=key)
+        paths.append(save_cache(fixture["id"], digest, payload["model"],
+                                body, credential=key))
     return paths
