@@ -1,0 +1,242 @@
+{
+  "accuracy_headline": 0.8888888888888888,
+  "confidence_buckets": {
+    "cutoff": 0.9,
+    "gap_pp": 43.75,
+    "high": {
+      "correct": 30,
+      "n": 32,
+      "precision": 0.9375
+    },
+    "low": {
+      "correct": 2,
+      "n": 4,
+      "precision": 0.5
+    }
+  },
+  "conflict_note": "real_standards_conflict claims assert a cross-RFC conflict judged against two sections; reported descriptively with no threshold.",
+  "conflicts": [
+    {
+      "confidence": 0.98,
+      "fixture_id": "c037",
+      "q2": 0.59,
+      "q3": 0.22,
+      "q4": "fully",
+      "verdict": "supports"
+    },
+    {
+      "confidence": 0.8,
+      "fixture_id": "c038",
+      "q2": 0.45,
+      "q3": 0.33,
+      "q4": "fully",
+      "verdict": "supports"
+    },
+    {
+      "confidence": 0.98,
+      "fixture_id": "c039",
+      "q2": 0.65,
+      "q3": 0.22,
+      "q4": "fully",
+      "verdict": "supports"
+    },
+    {
+      "confidence": 0.85,
+      "fixture_id": "c040",
+      "q2": 0.73,
+      "q3": 0.45,
+      "q4": "fully",
+      "verdict": "supports"
+    }
+  ],
+  "confusion": {
+    "contradicts": {
+      "contradicts": 3,
+      "says_nothing": 0,
+      "supports": 0
+    },
+    "says_nothing": {
+      "contradicts": 3,
+      "says_nothing": 3,
+      "supports": 1
+    },
+    "supports": {
+      "contradicts": 0,
+      "says_nothing": 0,
+      "supports": 26
+    }
+  },
+  "detection_rate": 0.9,
+  "false_flag_rate": 0.0,
+  "flagged_defects": 9,
+  "flagged_supported": 0,
+  "n_conflicts": 4,
+  "n_defects": 10,
+  "n_headline": 36,
+  "n_supported": 26,
+  "noul_q2_sweep": [
+    {
+      "n": 36,
+      "positives": 26,
+      "positives_flagged": 0,
+      "positives_not_flagged": 26,
+      "threshold": 0.1
+    },
+    {
+      "n": 36,
+      "positives": 26,
+      "positives_flagged": 0,
+      "positives_not_flagged": 26,
+      "threshold": 0.2
+    },
+    {
+      "n": 36,
+      "positives": 26,
+      "positives_flagged": 0,
+      "positives_not_flagged": 26,
+      "threshold": 0.3
+    },
+    {
+      "n": 36,
+      "positives": 26,
+      "positives_flagged": 0,
+      "positives_not_flagged": 26,
+      "threshold": 0.4
+    },
+    {
+      "n": 36,
+      "positives": 26,
+      "positives_flagged": 0,
+      "positives_not_flagged": 26,
+      "threshold": 0.5
+    },
+    {
+      "n": 36,
+      "positives": 24,
+      "positives_flagged": 0,
+      "positives_not_flagged": 24,
+      "threshold": 0.6
+    },
+    {
+      "n": 36,
+      "positives": 23,
+      "positives_flagged": 0,
+      "positives_not_flagged": 23,
+      "threshold": 0.7
+    },
+    {
+      "n": 36,
+      "positives": 20,
+      "positives_flagged": 0,
+      "positives_not_flagged": 20,
+      "threshold": 0.8
+    },
+    {
+      "n": 36,
+      "positives": 8,
+      "positives_flagged": 0,
+      "positives_not_flagged": 8,
+      "threshold": 0.9
+    }
+  ],
+  "noul_q3_sweep": [
+    {
+      "n": 36,
+      "positives": 27,
+      "positives_flagged": 9,
+      "positives_not_flagged": 18,
+      "threshold": 0.1
+    },
+    {
+      "n": 36,
+      "positives": 16,
+      "positives_flagged": 9,
+      "positives_not_flagged": 7,
+      "threshold": 0.2
+    },
+    {
+      "n": 36,
+      "positives": 13,
+      "positives_flagged": 9,
+      "positives_not_flagged": 4,
+      "threshold": 0.3
+    },
+    {
+      "n": 36,
+      "positives": 11,
+      "positives_flagged": 9,
+      "positives_not_flagged": 2,
+      "threshold": 0.4
+    },
+    {
+      "n": 36,
+      "positives": 11,
+      "positives_flagged": 9,
+      "positives_not_flagged": 2,
+      "threshold": 0.5
+    },
+    {
+      "n": 36,
+      "positives": 11,
+      "positives_flagged": 9,
+      "positives_not_flagged": 2,
+      "threshold": 0.6
+    },
+    {
+      "n": 36,
+      "positives": 10,
+      "positives_flagged": 9,
+      "positives_not_flagged": 1,
+      "threshold": 0.7
+    },
+    {
+      "n": 36,
+      "positives": 10,
+      "positives_flagged": 9,
+      "positives_not_flagged": 1,
+      "threshold": 0.8
+    },
+    {
+      "n": 36,
+      "positives": 9,
+      "positives_flagged": 9,
+      "positives_not_flagged": 0,
+      "threshold": 0.9
+    }
+  ],
+  "per_class": {
+    "contradicted": {
+      "correct": 3,
+      "flagged": 3,
+      "n": 3
+    },
+    "fabricated_quote": {
+      "correct": 2,
+      "flagged": 3,
+      "n": 3
+    },
+    "supported": {
+      "correct": 26,
+      "flagged": 0,
+      "n": 26
+    },
+    "unsupported": {
+      "correct": 1,
+      "flagged": 2,
+      "n": 2
+    },
+    "wrong_section": {
+      "correct": 0,
+      "flagged": 1,
+      "n": 2
+    }
+  },
+  "triage": {
+    "accepted": 30,
+    "coverage": 0.8333333333333334,
+    "precision": 0.9666666666666667,
+    "target": 0.95,
+    "threshold": 0.98,
+    "total": 36
+  }
+}

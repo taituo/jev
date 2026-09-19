@@ -1,0 +1,48 @@
+{
+  "fixture_id": "c032",
+  "request_hash": "37d69744414ab191dca2c28d21a58585aed6840afd38d02ed485d7e4e7ebcc56",
+  "created_at": "2026-09-19T06:58:30Z",
+  "model_requested": "jev-latest",
+  "model": "jev-1.13.0",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 126
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "q1_relation": {
+        "type": "choice",
+        "choice": "contradicts",
+        "confidence": 1.0,
+        "probabilities": {
+          "says_nothing": 0.0,
+          "contradicts": 1.0,
+          "supports": 0.0
+        }
+      },
+      "q2_verbatim": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "q3_beyond": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "q4_scope": {
+        "type": "choice",
+        "choice": "fully",
+        "confidence": 0.98,
+        "probabilities": {
+          "outside": 0.0,
+          "fully": 0.99,
+          "partly": 0.01
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 911,
+      "output_tokens": 126
+    }
+  }
+}
